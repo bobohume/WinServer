@@ -1,0 +1,12 @@
+#ifndef _ERROECODEDEFINE_H_
+#define _ERROECODEDEFINE_H_
+
+//数据保存返回
+enum SaveError
+{
+	SAVEERROR_NONE	= 0,
+	SAVEERROR_SIDMISMATCHED,
+	SAVEERROR_DBERROR,
+};
+
+#endif /*_ERROECODEDEFINE_H_*/

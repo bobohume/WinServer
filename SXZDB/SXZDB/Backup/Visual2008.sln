@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "AccountDB", "AccountDB\AccountDB.dbproj", "{36CBFE5C-B6F9-42B4-A6EE-710C772D2137}"
+EndProject
+Project("{C8D11400-126E-41CD-887F-60BD40844F9E}") = "ActorDB", "ActorDB\ActorDB.dbproj", "{44C273D0-94E8-4388-BB7A-1942FC6D5ECF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36CBFE5C-B6F9-42B4-A6EE-710C772D2137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36CBFE5C-B6F9-42B4-A6EE-710C772D2137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36CBFE5C-B6F9-42B4-A6EE-710C772D2137}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{36CBFE5C-B6F9-42B4-A6EE-710C772D2137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36CBFE5C-B6F9-42B4-A6EE-710C772D2137}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36CBFE5C-B6F9-42B4-A6EE-710C772D2137}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{44C273D0-94E8-4388-BB7A-1942FC6D5ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44C273D0-94E8-4388-BB7A-1942FC6D5ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44C273D0-94E8-4388-BB7A-1942FC6D5ECF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{44C273D0-94E8-4388-BB7A-1942FC6D5ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44C273D0-94E8-4388-BB7A-1942FC6D5ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44C273D0-94E8-4388-BB7A-1942FC6D5ECF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

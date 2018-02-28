@@ -1,0 +1,11 @@
+﻿CREATE FUNCTION [dbo].[GetDateTextDesc](@Date DATETIME)
+RETURNS VARCHAR(256)
+WITH EXECUTE AS CALLER
+AS
+BEGIN
+	DECLARE @RET VARCHAR(256)
+	SET @RET = '<t c=''0xffff22ff''>' +CAST(YEAR(@Date) AS VARCHAR(4)) + '年' +
+			CAST(MONTH(@Date) AS VARCHAR(2)) + '月' +
+			CAST(DAY(@Date) AS VARCHAR(2)) + '日</t>'
+	RETURN @RET
+END

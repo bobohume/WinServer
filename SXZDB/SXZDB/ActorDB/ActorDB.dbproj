@@ -1,0 +1,807 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>"DatabaseProject"</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.0</ProjectVersion>
+    <ProjectGuid>{44c273d0-94e8-4388-bb7a-1942fc6d5ecf}</ProjectGuid>
+    <DSP>Microsoft.Data.Schema.Sql.Sql90DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>2052,CI</ModelCollation>
+    <DefaultFileStructure>BySchema</DefaultFileStructure>
+    <DeployToDatabaseAddToServerExplorer>False</DeployToDatabaseAddToServerExplorer>
+    <DeployToScript>True</DeployToScript>
+    <CatalogPropertiesFile>Properties\Database.sqlsettings</CatalogPropertiesFile>
+    <RootNamespace>ActorDB</RootNamespace>
+    <DefaultSchema>dbo</DefaultSchema>
+    <SccProjectName>
+    </SccProjectName>
+    <SccProvider>
+    </SccProvider>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <PreviousProjectVersion>4.0</PreviousProjectVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v10.0\TeamData\Microsoft.Data.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Schema Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies\" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Queues\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes\" />
+    <Folder Include="Schema Objects\Schemas\" />
+    <Folder Include="Schema Objects\Schemas\dbo\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers\" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+  </ItemGroup>
+  <ItemGroup>
+    <PropertiesFile Include="Properties\Database.sqlsettings">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqldeployment">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqlcmdvars">
+    </PropertiesFile>
+    <Build Include="Properties\Database.sqlpermissions">
+      <ModelBuilderType>Permissions</ModelBuilderType>
+    </Build>
+    <Build Include="Schema Objects\ActorDB.rolememberships.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\ActorDB_1.rolememberships.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\Fn_GetBindGoldDesc.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\Fn_GetBindMoneyDesc.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\Fn_GetDateDesc.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\Fn_GetGoldDesc.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\Fn_GetMoneyDesc.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\Fn_GetRand.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\GetDateTextDesc.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Functions\GetMoneyTextDesc.function.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_ChangeTopRank_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreatePlayer.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_DeleteAllMail.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_DeleteMail.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_DeletePlayer.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_DeleteTargetSocial.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_DumpMail.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_GMUpdateSocial.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_LoadMailForPage.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_MakeAccount.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_MakeAccountApple.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_OldPlayerLoginBonus.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_QueryPlayerInfo.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_RobotBatchCreateAccount.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_SaveSingleSocial.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_SaveSocial.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_SaveStallShopSetting.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_SaveTopDisaster.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_SaveTopLevel.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_SaveWorldSetting.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateAccountLogin.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateAccountLogoutTime.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateDoubleSocial.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateLoginTime.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateLogoutTime.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateMailList.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdatePlayer.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdatePlayerLoginTime.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdatePlayerLogoutTime.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateSingleSocial.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateSocialFriendValue.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdateTopRank.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_AccountFunction.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_dTotalOfflineTime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_dTotalOnlineTime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_GMFlag.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_IsAdult.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_LoginError.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_LoginIP.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_LoginStatus.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_LoginTime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_LogoutTime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_Mode.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_Status.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_BaseInfo_TotalOnlineTime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_isSystem.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_itemId.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_item_count.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_money.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_readed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_recver.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_sender_name.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_send_time.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_MailList_title.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Account_LoginLevel.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Disaster_TopDisaster.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Disaster_TopLevel.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_deletetime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_isReturn.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_isSystem.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_item.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_itemId.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_item_count.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_money.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_msg.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_readed.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_recver.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_recver_name.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_recvFlag.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_return_time.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_sender_name.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_send_time.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_Deleted_title.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_isReturn.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_item.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_msg.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_recver_name.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_recvFlag.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_MailList_return_time.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_AccountId.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_Acitve.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_BLOBData.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_dbVersion.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_DeletedDate.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_FaceImage.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_Family.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_FamilyPos.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_lastLogin.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_lastLogout.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_Level.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_MasterLevel.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_MPMStudyLevel.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_Sex.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Player_Deleted_Status.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Social_friendvalue.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRankCache_lastTime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_Blob.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_honour.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_idx.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_idxValue.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_itemName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_lastTime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_orgLv.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_playerId.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_playerName.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_pValue.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_type.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_TopRank_uid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_Version_UpdateDate.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_ActivityFlag.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_GodGivePath.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_MaxStalls.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_TotalFlourish.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_val0.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_val01.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_val02.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_val03.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_val04.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_val05.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_val06.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_val07.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_World_Years5Assure.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_Blob_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_honour_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_idxValue_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_idx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_itemName_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_orgLv_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_playerId_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_playerName_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_pValue_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_type_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_TopRankCache_uid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\DBConfig.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IDX_Tbl_MailList_recver.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IDX_TBL_Player_AccountID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IDX_TBL_Player_Deleted_PlayerName.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IDX_TBL_Player_PlayerName.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_BaseInfo.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_Tbl_MailList_isSystem.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_Tbl_PlayerName.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_Tbl_Social_Player.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_Tbl_Social_Type.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IX_Tbl_TopRank_Type.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_BaseInfo.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_MailList.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_MailList_Deleted.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_Player.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_Player_Deleted.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_Social_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_TopRank.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_TopRankCache_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Account.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_AccountHelper.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_MailList.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_MailList_Deleted.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Player.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Player_Deleted.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Social.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_TopRank.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_TopRankCache_1.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Version.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_World.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql">
+      <SubType>Code</SubType>
+    </PreDeploy>
+    <PostDeploy Include="Scripts\Post-Deployment\NewDatabaseInitialize.sql">
+      <SubType>Code</SubType>
+    </PostDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <NotInBuild Include="Scripts\Post-Deployment\Version_1.5.8.10.sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+    <NotInBuild Include="Schema Objects\Schemas\dbo\Tables\Indexes\IDX_Tbl_Card_PlayerID.index .sql">
+      <SubType>NotInBuild</SubType>
+    </NotInBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <BuildContributorArgument Include="OutDir=$(OutDir)" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Buff.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_Buff.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Item.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_Item.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IDX_Tbl_Item_PlayerID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_TimeSet.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_TimeSet.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Equip.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_Equip.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_LoadPlayer.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CheckAccoutExist.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Indexes\IDX_Tbl_Equip_PlayerID.index.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_PlayerPurchase.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_WeiXinGetPlayerInfo.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_WeiXinBindPlayerTel.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_PlayerPurchase.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_PlayerPurchase.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogPlayer.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogPlayer.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_PlayerSetVip.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_WeiXinGetPlayerInfoById.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_UpdatePlayerGold.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_WeiXinSignedPlayer.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_Social.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_PlayerBaseInfo.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_PlayerBaseInfo.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_Card.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_Card.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+  </ItemGroup>
+</Project>

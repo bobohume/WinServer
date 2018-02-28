@@ -1,0 +1,9 @@
+F:\qpserver\SXZDB\SXZDB\ActorDB\sql\debug\ActorDB.dacpac
+F:\qpserver\SXZDB\SXZDB\ActorDB\sql\debug\ActorDB.dll
+F:\qpserver\SXZDB\SXZDB\ActorDB\sql\debug\ActorDB.pdb
+F:\qpserver\SXZDB\SXZDB\ActorDB\obj\Debug\Model.xml
+F:\qpserver\SXZDB\SXZDB\ActorDB\obj\Debug\refactor.xml
+F:\qpserver\SXZDB\SXZDB\ActorDB\obj\Debug\postdeploy.sql
+F:\qpserver\SXZDB\SXZDB\ActorDB\obj\Debug\predeploy.sql
+F:\qpserver\SXZDB\SXZDB\ActorDB\obj\Debug\ActorDB.dll
+F:\qpserver\SXZDB\SXZDB\ActorDB\obj\Debug\ActorDB.pdb

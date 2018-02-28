@@ -1,0 +1,960 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="data">
+      <UniqueIdentifier>{3f115cef-7d87-4491-b63a-f05aec7a307a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db">
+      <UniqueIdentifier>{d870d8e7-a29e-4f0a-8a6b-9186c58011bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db\mail">
+      <UniqueIdentifier>{7cf447f9-a7f1-49f5-9604-24a2899d0909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{215fba42-d5cc-4ef6-8646-982dc5842804}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{b2fdb704-d1a6-4843-b30b-1582a5c1dd83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\lua">
+      <UniqueIdentifier>{41b69bac-8e38-4986-b43c-6ca4340c4507}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{82a86d8b-0ef6-4afc-9e72-5a38a799d7d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\PlayerBaseInfo">
+      <UniqueIdentifier>{bfaa7664-3170-424f-ac59-6684cb25a6f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room">
+      <UniqueIdentifier>{506212d3-8445-4327-b182-c4bfb4d6bc46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Room\RoomHandle">
+      <UniqueIdentifier>{4541b07c-461b-4737-b90c-52d0ab78c499}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Data">
+      <UniqueIdentifier>{ba88f376-6159-4aa1-9f80-0e6ce30d7b9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Item">
+      <UniqueIdentifier>{16c13015-56db-4c74-9553-b325834ffd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\TimeSet">
+      <UniqueIdentifier>{ff81120c-fbed-4fd3-84ed-b329a51cc387}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Card">
+      <UniqueIdentifier>{94933caf-b5dc-4c06-a074-760a1cb48b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Battle">
+      <UniqueIdentifier>{0ac07719-709e-4406-8b7e-e0c7f2b42655}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Officer">
+      <UniqueIdentifier>{d23bd4d6-d3a6-47d6-b2f1-82f4c3c43183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Buff">
+      <UniqueIdentifier>{77cd2c25-774a-4afc-ac6b-d821c06b9b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Princess">
+      <UniqueIdentifier>{16165e82-862e-4273-8f27-1ede1540284e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Skill">
+      <UniqueIdentifier>{f4ff73f3-2209-4a84-8000-9140bdf872ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Pvp">
+      <UniqueIdentifier>{9c105d26-ef52-4459-a232-876213b716e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\TopRank">
+      <UniqueIdentifier>{f5e640ee-4aac-4d1f-9e57-c364a1605ce2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\AI">
+      <UniqueIdentifier>{b1ccad9e-f414-42ed-b8c4-fa677b0a5124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Visit">
+      <UniqueIdentifier>{3a108f9b-443a-44c3-a562-299de8a83e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\GM">
+      <UniqueIdentifier>{2dd286af-0f84-48fa-890e-73b21680cbc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Dinner">
+      <UniqueIdentifier>{b4a40ff7-31aa-4fe9-a64f-a84a84130b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Activity">
+      <UniqueIdentifier>{50dd599d-1656-47b5-a26c-c4f6c319126a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Org">
+      <UniqueIdentifier>{b2d09fb3-97bf-42e6-bdf3-8e37d111b392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\VIP">
+      <UniqueIdentifier>{1b9aec5f-1020-4943-8198-cdb7e8a95072}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Guide">
+      <UniqueIdentifier>{891aeb48-0048-494c-b8c0-940cc0bac01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic\Boss">
+      <UniqueIdentifier>{ce2bdca6-5c44-44f4-b04a-d8e9a3a4aea8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\WorldServer\AccountHandler.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\ChatHelper.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Event.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\LockCommon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\PlayerMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\SafePacket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Script.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\ServerMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\ServerMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\SocialManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\WorldServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\BanInfoData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Base64.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CfgBuilder.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CollectItemData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CommonPacket.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CommonServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DataFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DumpHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FilterOpt.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GameData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GdiUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LogHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PlayerStruct.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UDP.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UnitTest.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_GetMailItem.cpp">
+      <Filter>db\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_MailList.cpp">
+      <Filter>db\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_ReadMail.cpp">
+      <Filter>db\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_SendMail.cpp">
+      <Filter>db\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_DeleteAllMail.cpp">
+      <Filter>db\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_DeleteMail.cpp">
+      <Filter>db\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_SetAccountStatus.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_CreatePlayer.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_UpdateAccountTime.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_UpdateAccountLogoutTime.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_CheckOldPlayerLogin.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Ansy_WriteAccount.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\mRandom.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UUId.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\EventProcess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_ReNameAccount.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_UpdatePlayerFlag.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_PlayerPurchase.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Script\lua\snapshot.c">
+      <Filter>Script\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Script\lua_tinker.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Script\LuaConsole.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Database\DB_Execution.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Database\platformStrings.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Database\StringTable.cpp">
+      <Filter>Database</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\PlayerInfoMgr.cpp">
+      <Filter>Logic\PlayerBaseInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\CardMgr.cpp">
+      <Filter>Logic\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Room\ChessHN.cpp">
+      <Filter>Room\RoomHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Room\ChessGX.cpp">
+      <Filter>Room\RoomHandle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Room\ChessLogic.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Room\ChessTable.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Room\RoomMrg.cpp">
+      <Filter>Room</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\ItemData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CppTypeInfo.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\CardData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\SkillData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\BuffData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\ItemMgr.cpp">
+      <Filter>Logic\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\TimeSetMgr.cpp">
+      <Filter>Logic\TimeSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\BattleMgr.cpp">
+      <Filter>Logic\Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\CopyData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\OfficerData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\OfficerMgr.cpp">
+      <Filter>Logic\Officer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\BuffMgr.cpp">
+      <Filter>Logic\Buff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\platform.cpp">
+      <Filter>Logic\TimeSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\PrincessData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\PrincessMgr.cpp">
+      <Filter>Logic\Princess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\PrinceMgr.cpp">
+      <Filter>Logic\Princess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\SkillMgr.cpp">
+      <Filter>Logic\Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\AIFsm.cpp">
+      <Filter>Logic\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\PveAI.cpp">
+      <Filter>Logic\AI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\PvpData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\PvpMgr.cpp">
+      <Filter>Logic\Pvp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UtilString.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\MailManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\DB_TryGetMailItem.cpp">
+      <Filter>db\mail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\VisitMgr.cpp">
+      <Filter>Logic\Visit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\VisitData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\dbStruct.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\TaskData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\TaskMgr.cpp">
+      <Filter>Logic\TimeSet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\GMMgr.cpp">
+      <Filter>Logic\GM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\DinnerMgr.cpp">
+      <Filter>Logic\Dinner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\TopMgr.cpp">
+      <Filter>Logic\TopRank</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\ActivityManager.cpp">
+      <Filter>Logic\Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\Org.cpp">
+      <Filter>Logic\Org</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\OrgData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\VIPMgr.cpp">
+      <Filter>Logic\VIP</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\VIPData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\NoviceGuide.cpp">
+      <Filter>Logic\Guide</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\BossMgr.cpp">
+      <Filter>Logic\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\BossData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Logic\RandomNameData.cpp">
+      <Filter>Logic\Data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\WorldServer\AccountHandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Channel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\ChatHelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\ChatMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Event.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\EventProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\LockCommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\MailManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\PlayerMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\RemotePacketProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\SafePacket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Script.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\ServerMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\SocialManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\UserPacketProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\WorldServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\YYDef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AccountSMData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\AuctionBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\BanInfoData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Base64.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\BillingBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\BoardBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CfgBuilder.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ChallengeBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ChatBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CheckCodeCache.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ClientErrorCode.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CollectEventBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CollectItemData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonPacket.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonServer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonServerClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CopymapSMData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DataFile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DumpHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FilterOpt.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GameData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GdiUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GlobalEvent.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GlobalEventBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GoldExchangeBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\KeyMapBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LockRef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LogHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LogicEventBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MarriageBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MemGuard.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PacketType.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PlayerStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PlayerStructEx.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\RewardBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SocialBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\StallListSMData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\StockBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TeamBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TeamSMData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UDP.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UdpLog.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UnitTest.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\version.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ZoneSetting.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_GetMailItem.h">
+      <Filter>db\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_MailList.h">
+      <Filter>db\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_ReadMail.h">
+      <Filter>db\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_SendMail.h">
+      <Filter>db\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_DeleteAllMail.h">
+      <Filter>db\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_DeleteMail.h">
+      <Filter>db\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_SetAccountStatus.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_CreatePlayer.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_UpdateAccountLogoutTime.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_UpdateAccountTime.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_CheckOldPlayerLogin.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Ansy_WriteAccount.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\mRandom.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UUId.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_ReNameAccount.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_UpdatePlayerFlag.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_PlayerPurchase .h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lapi.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lauxlib.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lcode.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\ldebug.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\ldo.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lfunc.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lgc.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\llex.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\llimits.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lmem.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lobject.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lopcodes.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lparser.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lstate.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lstring.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\ltable.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\ltm.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lua.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\luaconf.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lualib.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\LuaType.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\LuaWarp.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lundump.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lvm.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\lzio.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua\stdbool.h">
+      <Filter>Script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\lua_tinker.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Script\LuaConsole.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Database\DB_Execution.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Database\platformStrings.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Database\StringTable.h">
+      <Filter>Database</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PlayerInfoBase.h">
+      <Filter>Logic\PlayerBaseInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PlayerInfoMgr.h">
+      <Filter>Logic\PlayerBaseInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\CardMgr.h">
+      <Filter>Logic\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\CardBase.h">
+      <Filter>Logic\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Room\ChessGX.h">
+      <Filter>Room\RoomHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Room\ChessHN.h">
+      <Filter>Room\RoomHandle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Room\ChessLogic.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Room\ChessTable.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Room\FvMask.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Room\RoomBase.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Room\RoomMgr.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Room\ChessBase.h">
+      <Filter>Room</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\ItemData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CppTypeInfo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\CardData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\SkillData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BuffData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\ItemMgr.h">
+      <Filter>Logic\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\TimeSetMgr.h">
+      <Filter>Logic\TimeSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\TimeSetBase.h">
+      <Filter>Logic\TimeSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BattleMgr.h">
+      <Filter>Logic\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BattleBase.h">
+      <Filter>Logic\Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\CopyData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\OfficerData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\OfficerMgr.h">
+      <Filter>Logic\Officer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\OfficerBase.h">
+      <Filter>Logic\Officer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BaseMgr.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BaseData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BuffMgr.h">
+      <Filter>Logic\Buff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\platform.h">
+      <Filter>Logic\TimeSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PrincessData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PrincessBase.h">
+      <Filter>Logic\Princess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PrincessMgr.h">
+      <Filter>Logic\Princess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PrinceMgr.h">
+      <Filter>Logic\Princess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\SkillBase.h">
+      <Filter>Logic\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\SkillMgr.h">
+      <Filter>Logic\Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PvpBase.h">
+      <Filter>Logic\Pvp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\TopBase.h">
+      <Filter>Logic\TopRank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\TopMgr.h">
+      <Filter>Logic\TopRank</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\AIFsm.h">
+      <Filter>Logic\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PveAI.h">
+      <Filter>Logic\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PvpData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\PvpMgr.h">
+      <Filter>Logic\Pvp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UtilString.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\DB_TryGetMailItem.h">
+      <Filter>db\mail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MailBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\VisitlBase.h">
+      <Filter>Logic\Visit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\VisitlMgr.h">
+      <Filter>Logic\Visit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\VisitData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\dbStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\TaskData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\TaskMgr.h">
+      <Filter>Logic\TimeSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\TaskBase.h">
+      <Filter>Logic\TimeSet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\GMMgr.h">
+      <Filter>Logic\GM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\DinnerBase.h">
+      <Filter>Logic\Dinner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\DinnerMgr.h">
+      <Filter>Logic\Dinner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\ActivityBase.h">
+      <Filter>Logic\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\ActivityManager.h">
+      <Filter>Logic\Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\OrgBase.h">
+      <Filter>Logic\Org</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\Org.h">
+      <Filter>Logic\Org</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\OrgData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\VIPBase.h">
+      <Filter>Logic\VIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\VIPMgr.h">
+      <Filter>Logic\VIP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\VIPData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\NoviceGuide.h">
+      <Filter>Logic\Guide</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BossMgr.h">
+      <Filter>Logic\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BossBase.h">
+      <Filter>Logic\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\BossData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\Logic\RandomNameData.h">
+      <Filter>Logic\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

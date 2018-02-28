@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[GAME_CHARGE_HISTORY] (
+    [SEQUENCE]    BIGINT        NOT NULL,
+    [CREATEDATE]  DATETIME      NOT NULL,
+    [CHECKDATE]   DATETIME      NOT NULL,
+    [ACCOUNTID]   INT           NOT NULL,
+    [PAY_POINTS]  INT           NOT NULL,
+    [FREE_POINTS] INT           NOT NULL,
+    [HONOR]       INT           NOT NULL,
+    [CARDTYPE]    VARCHAR (20)  NOT NULL,
+    [CARDNO]      VARCHAR (100) NOT NULL
+);
+

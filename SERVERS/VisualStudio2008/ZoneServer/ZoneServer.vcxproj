@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitPress|Win32">
+      <Configuration>UnitPress</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Debug|Win32">
+      <Configuration>UnitTest_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Release|Win32">
+      <Configuration>UnitTest_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5DDEF1FF-6456-4D7D-BF5A-4E048A6C08E6}</ProjectGuid>
+    <RootNamespace>AccountServer</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">true</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_08d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)_08</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;..\..\DBLayer\;..\..\DBLayer\Common;..\..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ACCOUNTSERVER;TCP_SERVER;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName)_08d.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;DBLayerD.lib;luaWarp_08d.lib;TCCLib_08d.lib;dbghelp.lib;UID_08d.lib;Encrypt_08d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08d.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\ZoneServer\$(TargetFileName)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/Oy- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ACCOUNTSERVER;TCP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName)_08.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4748;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08.lib;WinTCP_08.lib;Base_08.lib;DBLayer.lib;luaWarp_08.lib;zlib_08.lib;TCCLib_08.lib;dbghelp.lib;UID_08.lib;quicklz_08.lib;Encrypt_08.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD.LIB;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\ZoneServer\$(TargetFileName)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ACCOUNTSERVER;TCP_SERVER;_SXZ_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName)_08d.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;ACCOUNTSERVER;TCP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName)_08.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;ACCOUNTSERVER;TCP_SERVER;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>$(IntDir)$(TargetName)_08d.pch</PrecompiledHeaderOutputFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;luaWarp_08d.lib;zlib_08d.lib;TCCLib_08d.lib;dbghelp.lib;UIDGen_d.lib;quicklz_08d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08d.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\AccountServer\$(TargetFileName)"
+..\..\Common\BuildHelper.exe -p $(TargetDir)$(TargetName).pdb -pf .\PDBs
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\Base64.cpp" />
+    <ClCompile Include="..\..\Common\CfgBuilder.cpp" />
+    <ClCompile Include="..\..\Common\CheckCodeCache.cpp" />
+    <ClCompile Include="..\..\Common\Common.cpp" />
+    <ClCompile Include="..\..\Common\CommonPacket.cpp" />
+    <ClCompile Include="..\..\Common\CommonServer.cpp" />
+    <ClCompile Include="..\..\Common\DumpHelper.cpp" />
+    <ClCompile Include="..\..\Common\GdiUtil.cpp" />
+    <ClCompile Include="..\..\Common\Script.cpp" />
+    <ClCompile Include="..\..\Common\TimerMgr.cpp" />
+    <ClCompile Include="..\..\Common\UDP.cpp" />
+    <ClCompile Include="..\..\Common\UnitTest.cpp" />
+    <ClCompile Include="..\..\ZoneServer\data\BuffData.cpp" />
+    <ClCompile Include="..\..\ZoneServer\data\DropData.cpp" />
+    <ClCompile Include="..\..\ZoneServer\data\InvestiGate.cpp" />
+    <ClCompile Include="..\..\ZoneServer\data\ItemData.cpp" />
+    <ClCompile Include="..\..\ZoneServer\data\NpcData.cpp" />
+    <ClCompile Include="..\..\ZoneServer\GameObject\Buff.cpp" />
+    <ClCompile Include="..\..\ZoneServer\GameObject\CGameObject.cpp" />
+    <ClCompile Include="..\..\ZoneServer\GameObject\CNpcObject.cpp" />
+    <ClCompile Include="..\..\ZoneServer\GameObject\CPlayerObject.cpp" />
+    <ClCompile Include="..\..\ZoneServer\GameObject\Stats.cpp" />
+    <ClCompile Include="..\..\ZoneServer\PlayerMgr.cpp" />
+    <ClCompile Include="..\..\ZoneServer\ServerGameplayState.cpp" />
+    <ClCompile Include="..\..\ZoneServer\ServerMain.cpp" />
+    <ClCompile Include="..\..\ZoneServer\ZoneServer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\Base64.h" />
+    <ClInclude Include="..\..\Common\CfgBuilder.h" />
+    <ClInclude Include="..\..\Common\CheckCodeCache.h" />
+    <ClInclude Include="..\..\Common\Common.h" />
+    <ClInclude Include="..\..\Common\CommonClient.h" />
+    <ClInclude Include="..\..\Common\CommonPacket.h" />
+    <ClInclude Include="..\..\Common\CommonServer.h" />
+    <ClInclude Include="..\..\Common\CommonServerClient.h" />
+    <ClInclude Include="..\..\Common\DumpHelper.h" />
+    <ClInclude Include="..\..\Common\GdiUtil.h" />
+    <ClInclude Include="..\..\Common\MemGuard.h" />
+    <ClInclude Include="..\..\Common\PacketType.h" />
+    <ClInclude Include="..\..\Common\PlayerStruct.h" />
+    <ClInclude Include="..\..\Common\RALibDef.h" />
+    <ClInclude Include="..\..\Common\Script.h" />
+    <ClInclude Include="..\..\Common\TimerMgr.h" />
+    <ClInclude Include="..\..\Common\UDP.h" />
+    <ClInclude Include="..\..\Common\UnitTest.h" />
+    <ClInclude Include="..\..\ZoneServer\data\BuffData.h" />
+    <ClInclude Include="..\..\ZoneServer\data\DropData.h" />
+    <ClInclude Include="..\..\ZoneServer\data\InvestiGate.h" />
+    <ClInclude Include="..\..\ZoneServer\data\ItemData.h" />
+    <ClInclude Include="..\..\ZoneServer\data\NpcData.h" />
+    <ClInclude Include="..\..\ZoneServer\GameObject\Buff.h" />
+    <ClInclude Include="..\..\ZoneServer\GameObject\CGameBase.h" />
+    <ClInclude Include="..\..\ZoneServer\GameObject\CGameObject.h" />
+    <ClInclude Include="..\..\ZoneServer\GameObject\CNpcObject.h" />
+    <ClInclude Include="..\..\ZoneServer\GameObject\CPlayerObject.h" />
+    <ClInclude Include="..\..\ZoneServer\GameObject\Stats.h" />
+    <ClInclude Include="..\..\ZoneServer\PlayerMgr.h" />
+    <ClInclude Include="..\..\ZoneServer\ServerGameplayState.h" />
+    <ClInclude Include="..\..\ZoneServer\ServerPacketProcess.h" />
+    <ClInclude Include="..\..\ZoneServer\Timer\timeSignal.h" />
+    <ClInclude Include="..\..\ZoneServer\ZoneServer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommLib\CommLib.vcxproj">
+      <Project>{1d8cd896-200f-41d4-bc6a-3ed624cea757}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

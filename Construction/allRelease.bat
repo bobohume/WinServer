@@ -1,0 +1,12 @@
+cd AccountServer
+start AccountServer_08.exe 
+cd ..\NetGate
+start NetGate_08.exe
+cd ..\WorldServer
+start WorldServer_08.exe
+cd ..\ChatServer
+start ChatServer_08.exe
+cd ..\RemoteAccount
+start RemoteAccount_08.exe
+cd ..\LogServer
+start LogServer.exe

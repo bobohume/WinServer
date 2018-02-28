@@ -1,0 +1,42 @@
+﻿CREATE PROCEDURE [dbo].[USP_CreateCmdGift]
+@Code varchar(32),
+@Type varchar(8),
+@PlayerID INT
+
+AS
+BEGIN
+	SET NOCOUNT ON
+	SET XACT_ABORT ON
+	DECLARE @ERR INT
+	SET @ERR = 0
+	
+	BEGIN TRANSACTION CreateCmdGift
+	IF NOT EXISTS(SELECT 1 FROM TBL_CmdConfig WHERE Code = @Code AND Type = @Type)
+	BEGIN
+		SET @ERR = 1001;
+	END
+	
+	IF @ERR = 0
+	BEGIN
+		IF EXISTS(SELECT 1 FROM TBL_CmdGift WHERE Code = @Code AND PlayerID = @PlayerID)
+		BEGIN
+			SET @ERR = 1002;
+		END
+	END
+	
+	IF @ERR = 0
+	BEGIN
+		INSERT INTO TBL_CmdGift(Code, Type, PlayerID) 
+			SELECT @Code, @Type, @PlayerID
+
+		IF @@ROWCOUNT = 0
+			SET @ERR = 1003
+	END
+
+	IF @ERR = 0
+		COMMIT TRANSACTION CreateCmdGift
+	ELSE
+		ROLLBACK TRANSACTION CreateCmdGift
+
+	SELECT @ERR
+END

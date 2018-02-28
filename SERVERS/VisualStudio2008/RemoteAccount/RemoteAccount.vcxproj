@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitPress|Win32">
+      <Configuration>UnitPress</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Debug|Win32">
+      <Configuration>UnitTest_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Release|Win32">
+      <Configuration>UnitTest_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest|Win32">
+      <Configuration>UnitTest</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D44E053-57B9-42F5-ACBA-81A83DAAC19E}</ProjectGuid>
+    <RootNamespace>RemoteAccount</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>false</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_08d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)_08</TargetName>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;TCP_SERVER;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;CURL_STATICLIB;REMOTEACCOUNT;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;DBLayerD.lib;luaWarp_08d.lib;dbghelp.lib;comsuppw.lib;Wldap32.lib;Json_08d.lib;libcurl.lib;Win32_Interop.lib;hiredis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;..\..\RemoteAccount\InformerLib;..\..\RemoteAccount\server_auth;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ShowProgress>NotSet</ShowProgress>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08d.pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\RemoteAccount\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Oy- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;TCP_SERVER;CURL_STATICLIB;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4748;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08.lib;DBLayer.lib;WinTCP_08.lib;luaWarp_08.lib;dbghelp.lib;Base_08.lib;mssoap30.lib;comsuppw.lib;Wldap32.lib;Json_08.lib;libcurl_imp.lib;Win32_Interop_08.lib;hiredis_08.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;..\..\RemoteAccount\InformerLib;..\..\RemoteAccount\server_auth;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08.pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\RemoteAccount\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;TCP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;lualib_08d.lib;luaWarp_08d.lib;zlib_08d.lib;TCCLib_08d.lib;dbghelp.lib;quicklz_08.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>UnitTestMain</EntryPointSymbol>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\RemoteAccount\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;TCP_SERVER;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;luaWarp_08d.lib;zlib_08d.lib;TCCLib_08d.lib;dbghelp.lib;UIDGen_d.lib;quicklz_08d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\RemoteAccount\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;TCP_SERVER;_NTJ_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;TCP_SERVER;_NTJ_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4748;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\dbStruct.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_BindAccount.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_CheckPlayerName .cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_Code.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_CreateAccount.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_CreateOrg.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_CurlRecovery.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_DeleteOrg.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_Login.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_PurchaseRecord.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_Reward.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\Http_Purchase.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\PlayerManager.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\RemoteAccount.cpp" />
+    <ClCompile Include="..\..\Common\BackWorker.cpp" />
+    <ClCompile Include="..\..\Common\Base64.cpp" />
+    <ClCompile Include="..\..\Common\CfgBuilder.cpp" />
+    <ClCompile Include="..\..\Common\Common.cpp" />
+    <ClCompile Include="..\..\Common\CommonPacket.cpp" />
+    <ClCompile Include="..\..\Common\CommonServer.cpp" />
+    <ClCompile Include="..\..\Common\CppTypeInfo.cpp" />
+    <ClCompile Include="..\..\Common\DumpHelper.cpp" />
+    <ClCompile Include="..\..\Common\LogHelper.cpp" />
+    <ClCompile Include="..\..\Common\MemoryShare.cpp" />
+    <ClCompile Include="..\..\Common\PlayerStruct.cpp" />
+    <ClCompile Include="..\..\Common\Script.cpp" />
+    <ClCompile Include="..\..\Common\SimpleGC.cpp" />
+    <ClCompile Include="..\..\Common\UDP.cpp" />
+    <ClCompile Include="..\..\Common\UnitTest.cpp" />
+    <ClCompile Include="..\..\Common\UtilString.cpp" />
+    <ClCompile Include="..\..\Common\WaitObject.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_CreatePlayer.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_DeletePlayer.cpp" />
+    <ClCompile Include="..\..\RemoteAccount\DB\DB_LoginPlayer.cpp" />
+    <ClCompile Include="..\..\Common\Http\Http.cpp" />
+    <ClCompile Include="..\..\Common\Http\Param.cpp" />
+    <ClCompile Include="..\..\Common\Http\Request.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\dbStruct.h" />
+    <ClInclude Include="..\..\Common\Http\curl\curl.h" />
+    <ClInclude Include="..\..\Common\Http\curl\curlbuild.h" />
+    <ClInclude Include="..\..\Common\Http\curl\curlrules.h" />
+    <ClInclude Include="..\..\Common\Http\curl\curlver.h" />
+    <ClInclude Include="..\..\Common\Http\curl\easy.h" />
+    <ClInclude Include="..\..\Common\Http\curl\mprintf.h" />
+    <ClInclude Include="..\..\Common\Http\curl\multi.h" />
+    <ClInclude Include="..\..\Common\Http\curl\stdcheaders.h" />
+    <ClInclude Include="..\..\Common\Http\curl\typecheck-gcc.h" />
+    <ClInclude Include="..\..\Common\Http\curl\types.h" />
+    <ClInclude Include="..\..\Common\Json\autolink.h" />
+    <ClInclude Include="..\..\Common\Json\config.h" />
+    <ClInclude Include="..\..\Common\Json\features.h" />
+    <ClInclude Include="..\..\Common\Json\forwards.h" />
+    <ClInclude Include="..\..\Common\Json\json.h" />
+    <ClInclude Include="..\..\Common\Json\JsonParser.h" />
+    <ClInclude Include="..\..\Common\Json\json_batchallocator.h" />
+    <ClInclude Include="..\..\Common\Json\reader.h" />
+    <ClInclude Include="..\..\Common\Json\value.h" />
+    <ClInclude Include="..\..\Common\Json\writer.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_BindAccount.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_CheckPlayerName.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_Code.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_CreateAccount.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_CreateOrg.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_CurlRecovery.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_DeleteOrg.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_Login.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_PurchaseRecord.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_Reward.h" />
+    <ClInclude Include="..\..\RemoteAccount\Http_Purchase.h" />
+    <ClInclude Include="..\..\RemoteAccount\PlayerManager.h" />
+    <ClInclude Include="..\..\RemoteAccount\PollAccount.h" />
+    <ClInclude Include="..\..\RemoteAccount\RemoteAccount.h" />
+    <ClInclude Include="..\..\Common\BackWorker.h" />
+    <ClInclude Include="..\..\Common\Base64.h" />
+    <ClInclude Include="..\..\Common\BonusBase.h" />
+    <ClInclude Include="..\..\Common\CfgBuilder.h" />
+    <ClInclude Include="..\..\Common\Common.h" />
+    <ClInclude Include="..\..\Common\CommonClient.h" />
+    <ClInclude Include="..\..\Common\CommonPacket.h" />
+    <ClInclude Include="..\..\Common\CommonServer.h" />
+    <ClInclude Include="..\..\Common\CommonServerClient.h" />
+    <ClInclude Include="..\..\Common\CppTypeInfo.h" />
+    <ClInclude Include="..\..\Common\DumpHelper.h" />
+    <ClInclude Include="..\..\Common\IdGenerator.h" />
+    <ClInclude Include="..\..\Common\LogHelper.h" />
+    <ClInclude Include="..\..\Common\MemGuard.h" />
+    <ClInclude Include="..\..\Common\MemoryShare.h" />
+    <ClInclude Include="..\..\Common\PacketType.h" />
+    <ClInclude Include="..\..\Common\PlayerStruct.h" />
+    <ClInclude Include="..\..\Common\RALibDef.h" />
+    <ClInclude Include="..\..\Common\RegisterCommon.h" />
+    <ClInclude Include="..\..\Common\Script.h" />
+    <ClInclude Include="..\..\Common\ServerFramwork.h" />
+    <ClInclude Include="..\..\Common\SimpleGC.h" />
+    <ClInclude Include="..\..\Common\UDP.h" />
+    <ClInclude Include="..\..\Common\UnitTest.h" />
+    <ClInclude Include="..\..\Common\UtilString.h" />
+    <ClInclude Include="..\..\Common\WaitObject.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_CreatePlayer.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_DeletePlayer.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DB_LoginPlayer.h" />
+    <ClInclude Include="..\..\RemoteAccount\DB\DBContext.h" />
+    <ClInclude Include="..\..\Common\Http\Http.h" />
+    <ClInclude Include="..\..\Common\Http\Param.h" />
+    <ClInclude Include="..\..\Common\Http\Request.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommLib\CommLib.vcxproj">
+      <Project>{1d8cd896-200f-41d4-bc6a-3ed624cea757}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,27 @@
+/*CREATE PROCEDURE [dbo].[Sp_WeiXinBindPlayerTel]
+@PlayerID INT,
+@TEL VARCHAR(32)
+AS
+BEGIN
+	SET NOCOUNT ON
+	SET XACT_ABORT ON
+	DECLARE @ERR INT
+	SET @ERR = 0
+
+	BEGIN TRANSACTION WeiXinBindPlayerTel
+		IF NOT EXISTS(SELECT 1 FROM Tbl_Player WHERE PlayerID = @PlayerID)
+			SET @ERR = 1
+		ELSE 
+		BEGIN
+			UPDATE Tbl_Player SET Tel = @TEL WHERE PlayerID = @PlayerID
+			IF @@ROWCOUNT = 0
+				SET @ERR = 2
+		END
+
+		IF @ERR <> 0
+			ROLLBACK TRANSACTION WeiXinBindPlayerTel
+		ELSE
+			COMMIT TRANSACTION WeiXinBindPlayerTel
+		
+	SELECT @ERR AS '½á¹û'
+END*/

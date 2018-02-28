@@ -1,0 +1,784 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="64Debug|Win32">
+      <Configuration>64Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="64Release|Win32">
+      <Configuration>64Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitPress|Win32">
+      <Configuration>UnitPress</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Debug|Win32">
+      <Configuration>UnitTest_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Release|Win32">
+      <Configuration>UnitTest_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest|Win32">
+      <Configuration>UnitTest</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="World_NoDump_Release|Win32">
+      <Configuration>World_NoDump_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{98CFD78D-266F-47F9-877D-FF45763BC5A9}</ProjectGuid>
+    <RootNamespace>WorldServer</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='64Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='64Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='64Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='64Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">true</LinkIncremental>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='64Debug|Win32'">$(Configuration)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='64Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='64Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='64Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='64Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='64Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='64Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='64Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_08d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)_08</TargetName>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;..\..\DBLayer\;..\..\DBLayer\Common;..\..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WORLDSERVER;TCP_SERVER;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;DATA_OVER_TCP;MODEL_TEST;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4530;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>false</ShowIncludes>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;DBLayerD.lib;luaWarp_08d.lib;toluappd.lib;dbghelp.lib;Rpcrt4.lib;Win32_Interop.lib;hiredis.lib;Json_08d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08d.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>false</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "$(TargetDir)..\..\..\..\Construction\WorldServer\$(TargetFileName)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/Oy- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;..\..\DBLayer\;..\..\DBLayer\Common;..\..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WORLDSERVER;TCP_SERVER;DATA_OVER_TCP;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4748;4099;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>false</ShowIncludes>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08.lib;toluapp.lib;WinTCP_08.lib;Base_08.lib;DBLayer.lib;luaWarp_08.lib;dbghelp.lib;Rpcrt4.lib;Json_08.lib;Win32_Interop_08.lib;hiredis_08.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\WorldServer\$(TargetFileName)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\..\..\..\Libs\include\tolua;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WORLDSERVER;TCP_SERVER;_UNIT_TEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;lualib_08d.lib;luaWarp_08d.lib;zlib_08d.lib;TCCLib_08d.lib;toluappd.lib;dbghelp.lib;quicklz_08.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08d.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <EntryPointSymbol>UnitTestMain</EntryPointSymbol>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>false</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\WorldServer\$(TargetFileName)"
+..\..\Common\BuildHelper.exe -p $(TargetDir)$(TargetName).pdb -pf .\PDBs
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\..\..\..\Libs\include\tolua;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_NTJ_UNITTEST;WORLDSERVER;TCP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\..\..\..\Libs\include\tolua;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WORLDSERVER;TCP_SERVER;_NTJ_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\..\..\..\Libs\include\tolua;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WORLDSERVER;TCP_SERVER;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;luaWarp_08d.lib;zlib_08d.lib;TCCLib_08d.lib;toluappd.lib;dbghelp.lib;UIDGen_d.lib;quicklz_08d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08u.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08d.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>true</Profile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\WorldServer\$(TargetFileName)"
+..\..\Common\BuildHelper.exe -p $(TargetDir)$(TargetName).pdb -pf .\PDBs
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalOptions>/Oy- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\..\..\..\Libs\include\tolua;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WORLDSERVER;TCP_SERVER;DATA_OVER_TCP;NO_DUMP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <OpenMPSupport>true</OpenMPSupport>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4748;4099;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;toluapp.lib;DBLib_08.lib;WinTCP_08.lib;Base_08.lib;DBLayer.lib;luaWarp_08.lib;zlib_08.lib;TCCLib_08.lib;dbghelp.lib;UIDGen.lib;quicklz_08.lib;playerblob.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_noDump_08.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_noDump_08.pdb</ProgramDatabaseFile>
+      <SubSystem>Console</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\WorldServer\$(TargetFileName)"
+..\..\Common\BuildHelper.exe -p $(TargetDir)$(TargetName).pdb -pf .\PDBs
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\CppTypeInfo.cpp" />
+    <ClCompile Include="..\..\Common\dbStruct.cpp" />
+    <ClCompile Include="..\..\Common\mRandom.cpp" />
+    <ClCompile Include="..\..\Common\UtilString.cpp" />
+    <ClCompile Include="..\..\Common\UUId.cpp" />
+    <ClCompile Include="..\..\WorldServer\AccountHandler.cpp" />
+    <ClCompile Include="..\..\WorldServer\Ansy_WriteAccount.cpp" />
+    <ClCompile Include="..\..\WorldServer\ChatHelper.cpp" />
+    <ClCompile Include="..\..\WorldServer\Database\DB_Execution.cpp" />
+    <ClCompile Include="..\..\WorldServer\Database\platformStrings.cpp" />
+    <ClCompile Include="..\..\WorldServer\Database\StringTable.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_CheckOldPlayerLogin.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_CreatePlayer.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_DeleteAllMail.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_DeleteMail.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_GetMailItem.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_MailList.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_PlayerPurchase.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_ReadMail.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_ReNameAccount.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_SendMail.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_SetAccountStatus.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_TryGetMailItem.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_UpdateAccountLogoutTime.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_UpdateAccountTime.cpp" />
+    <ClCompile Include="..\..\WorldServer\DB_UpdatePlayerFlag.cpp" />
+    <ClCompile Include="..\..\WorldServer\Event.cpp" />
+    <ClCompile Include="..\..\WorldServer\EventProcess.cpp">
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">
+      </ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">
+      </ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">
+      </ExceptionHandling>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\LockCommon.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\ActivityManager.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\AIFsm.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\BattleMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\BossData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\BossMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\BuffData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\BuffMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\CardData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\CardMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\CopyData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\DinnerMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\GMMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\ItemData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\ItemMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\NoviceGuide.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\OfficerData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\OfficerMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\Org.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\OrgData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\platform.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\PlayerInfoMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\PrinceMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\PrincessData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\PrincessMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\PveAI.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\PvpMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\PvpData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\RandomNameData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\SkillData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\SkillMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\TaskData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\TaskMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\TimeSetMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\TopMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\VIPData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\VIPMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\VisitData.cpp" />
+    <ClCompile Include="..\..\WorldServer\Logic\VisitMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\MailManager.cpp" />
+    <ClCompile Include="..\..\WorldServer\PlayerMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\Room\ChessGX.cpp" />
+    <ClCompile Include="..\..\WorldServer\Room\ChessHN.cpp" />
+    <ClCompile Include="..\..\WorldServer\Room\ChessLogic.cpp" />
+    <ClCompile Include="..\..\WorldServer\Room\ChessTable.cpp" />
+    <ClCompile Include="..\..\WorldServer\Room\RoomMrg.cpp" />
+    <ClCompile Include="..\..\WorldServer\SafePacket.cpp" />
+    <ClCompile Include="..\..\Common\Script.cpp" />
+    <ClCompile Include="..\..\WorldServer\Script\LuaConsole.cpp" />
+    <ClCompile Include="..\..\WorldServer\Script\lua\snapshot.c" />
+    <ClCompile Include="..\..\WorldServer\Script\lua_tinker.cpp" />
+    <ClCompile Include="..\..\WorldServer\ServerMain.cpp" />
+    <ClCompile Include="..\..\WorldServer\ServerMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\SocialManager.cpp" />
+    <ClCompile Include="..\..\WorldServer\stdafx.cpp" />
+    <ClCompile Include="..\..\WorldServer\WorldServer.cpp">
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='World_NoDump_Release|Win32'">false</ShowIncludes>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\BanInfoData.cpp" />
+    <ClCompile Include="..\..\Common\Base64.cpp" />
+    <ClCompile Include="..\..\Common\CfgBuilder.cpp" />
+    <ClCompile Include="..\..\Common\CollectItemData.cpp" />
+    <ClCompile Include="..\..\Common\Common.cpp" />
+    <ClCompile Include="..\..\Common\CommonPacket.cpp" />
+    <ClCompile Include="..\..\Common\CommonServer.cpp" />
+    <ClCompile Include="..\..\Common\DataFile.cpp" />
+    <ClCompile Include="..\..\Common\DumpHelper.cpp" />
+    <ClCompile Include="..\..\Common\FilterOpt.cpp" />
+    <ClCompile Include="..\..\Common\GameData.cpp" />
+    <ClCompile Include="..\..\Common\GdiUtil.cpp" />
+    <ClCompile Include="..\..\Common\LogHelper.cpp" />
+    <ClCompile Include="..\..\Common\PlayerStruct.cpp" />
+    <ClCompile Include="..\..\Common\UDP.cpp" />
+    <ClCompile Include="..\..\Common\UnitTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\CppTypeInfo.h" />
+    <ClInclude Include="..\..\Common\dbStruct.h" />
+    <ClInclude Include="..\..\Common\MailBase.h" />
+    <ClInclude Include="..\..\Common\mRandom.h" />
+    <ClInclude Include="..\..\Common\UtilString.h" />
+    <ClInclude Include="..\..\Common\UUId.h" />
+    <ClInclude Include="..\..\WorldServer\AccountHandler.h" />
+    <ClInclude Include="..\..\WorldServer\Ansy_WriteAccount.h" />
+    <ClInclude Include="..\..\WorldServer\Channel.h" />
+    <ClInclude Include="..\..\WorldServer\ChatHelper.h" />
+    <ClInclude Include="..\..\WorldServer\ChatMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Database\DB_Execution.h" />
+    <ClInclude Include="..\..\WorldServer\Database\platformStrings.h" />
+    <ClInclude Include="..\..\WorldServer\Database\StringTable.h" />
+    <ClInclude Include="..\..\WorldServer\DB_CheckOldPlayerLogin.h" />
+    <ClInclude Include="..\..\WorldServer\DB_CreatePlayer.h" />
+    <ClInclude Include="..\..\WorldServer\DB_DeleteAllMail.h" />
+    <ClInclude Include="..\..\WorldServer\DB_DeleteMail.h" />
+    <ClInclude Include="..\..\WorldServer\DB_GetMailItem.h" />
+    <ClInclude Include="..\..\WorldServer\DB_MailList.h" />
+    <ClInclude Include="..\..\WorldServer\DB_PlayerPurchase .h" />
+    <ClInclude Include="..\..\WorldServer\DB_ReadMail.h" />
+    <ClInclude Include="..\..\WorldServer\DB_ReNameAccount.h" />
+    <ClInclude Include="..\..\WorldServer\DB_SendMail.h" />
+    <ClInclude Include="..\..\WorldServer\DB_SetAccountStatus.h" />
+    <ClInclude Include="..\..\WorldServer\DB_TryGetMailItem.h" />
+    <ClInclude Include="..\..\WorldServer\DB_UpdateAccountLogoutTime.h" />
+    <ClInclude Include="..\..\WorldServer\DB_UpdateAccountTime.h" />
+    <ClInclude Include="..\..\WorldServer\DB_UpdatePlayerFlag.h" />
+    <ClInclude Include="..\..\WorldServer\Event.h" />
+    <ClInclude Include="..\..\WorldServer\EventProcess.h" />
+    <ClInclude Include="..\..\WorldServer\LockCommon.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\ActivityBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\ActivityManager.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\AIFsm.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BaseMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BattleBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BattleMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BossBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BossData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BossMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BuffData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BuffMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\CardBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\CardData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\CardMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\CopyData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\BaseData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\DinnerBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\DinnerMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\GMMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\ItemData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\ItemMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\NoviceGuide.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\OfficerBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\OfficerData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\OfficerMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\Org.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\OrgBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\OrgData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\platform.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PlayerInfoBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PlayerInfoMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PrinceMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PrincessBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PrincessData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PrincessMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PveAI.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PvpMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PvpBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\PvpData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\RandomNameData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\SkillBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\SkillData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\SkillMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\TaskBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\TaskData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\TaskMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\TimeSetBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\TimeSetMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\TopBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\TopMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\VIPBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\VIPData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\VIPMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\VisitData.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\VisitlBase.h" />
+    <ClInclude Include="..\..\WorldServer\Logic\VisitlMgr.h" />
+    <ClInclude Include="..\..\WorldServer\MailManager.h" />
+    <ClInclude Include="..\..\WorldServer\PlayerMgr.h" />
+    <ClInclude Include="..\..\WorldServer\RemotePacketProcess.h" />
+    <ClInclude Include="..\..\WorldServer\Room\ChessBase.h" />
+    <ClInclude Include="..\..\WorldServer\Room\ChessGX.h" />
+    <ClInclude Include="..\..\WorldServer\Room\ChessHN.h" />
+    <ClInclude Include="..\..\WorldServer\Room\ChessLogic.h" />
+    <ClInclude Include="..\..\WorldServer\Room\ChessTable.h" />
+    <ClInclude Include="..\..\WorldServer\Room\FvMask.h" />
+    <ClInclude Include="..\..\WorldServer\Room\RoomBase.h" />
+    <ClInclude Include="..\..\WorldServer\Room\RoomMgr.h" />
+    <ClInclude Include="..\..\WorldServer\Script\LuaConsole.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lapi.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lauxlib.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lcode.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\ldebug.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\ldo.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lfunc.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lgc.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\llex.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\llimits.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lmem.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lobject.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lopcodes.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lparser.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lstate.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lstring.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\ltable.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\ltm.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lua.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\luaconf.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lualib.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\LuaType.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\LuaWarp.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lundump.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lvm.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\lzio.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua\stdbool.h" />
+    <ClInclude Include="..\..\WorldServer\Script\lua_tinker.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="..\..\WorldServer\SafePacket.h" />
+    <ClInclude Include="..\..\Common\Script.h" />
+    <ClInclude Include="..\..\WorldServer\ServerMgr.h" />
+    <ClInclude Include="..\..\WorldServer\SocialManager.h" />
+    <ClInclude Include="..\..\WorldServer\stdafx.h" />
+    <ClInclude Include="..\..\WorldServer\UserPacketProcess.h" />
+    <ClInclude Include="..\..\WorldServer\WorldServer.h" />
+    <ClInclude Include="..\..\Common\YYDef.h" />
+    <ClInclude Include="..\..\Common\AccountSMData.h" />
+    <ClInclude Include="..\..\Common\AuctionBase.h" />
+    <ClInclude Include="..\..\Common\BanInfoData.h" />
+    <ClInclude Include="..\..\Common\Base64.h" />
+    <ClInclude Include="..\..\Common\BillingBase.h" />
+    <ClInclude Include="..\..\Common\BoardBase.h" />
+    <ClInclude Include="..\..\Common\CfgBuilder.h" />
+    <ClInclude Include="..\..\Common\ChallengeBase.h" />
+    <ClInclude Include="..\..\Common\ChatBase.h" />
+    <ClInclude Include="..\..\Common\CheckCodeCache.h" />
+    <ClInclude Include="..\..\Common\ClientErrorCode.h" />
+    <ClInclude Include="..\..\Common\CollectEventBase.h" />
+    <ClInclude Include="..\..\Common\CollectItemData.h" />
+    <ClInclude Include="..\..\Common\Common.h" />
+    <ClInclude Include="..\..\Common\CommonClient.h" />
+    <ClInclude Include="..\..\Common\CommonPacket.h" />
+    <ClInclude Include="..\..\Common\CommonServer.h" />
+    <ClInclude Include="..\..\Common\CommonServerClient.h" />
+    <ClInclude Include="..\..\Common\CopymapSMData.h" />
+    <ClInclude Include="..\..\Common\DataFile.h" />
+    <ClInclude Include="..\..\Common\DumpHelper.h" />
+    <ClInclude Include="..\..\Common\FilterOpt.h" />
+    <ClInclude Include="..\..\Common\GameData.h" />
+    <ClInclude Include="..\..\Common\GdiUtil.h" />
+    <ClInclude Include="..\..\Common\GlobalEvent.h" />
+    <ClInclude Include="..\..\Common\GlobalEventBase.h" />
+    <ClInclude Include="..\..\Common\GoldExchangeBase.h" />
+    <ClInclude Include="..\..\Common\KeyMapBase.h" />
+    <ClInclude Include="..\..\Common\LockRef.h" />
+    <ClInclude Include="..\..\Common\LogHelper.h" />
+    <ClInclude Include="..\..\Common\LogicEventBase.h" />
+    <ClInclude Include="..\..\Common\MarriageBase.h" />
+    <ClInclude Include="..\..\Common\MemGuard.h" />
+    <ClInclude Include="..\..\Common\PacketType.h" />
+    <ClInclude Include="..\..\Common\PlayerStruct.h" />
+    <ClInclude Include="..\..\Common\PlayerStructEx.h" />
+    <ClInclude Include="..\..\Common\RewardBase.h" />
+    <ClInclude Include="..\..\Common\SocialBase.h" />
+    <ClInclude Include="..\..\Common\StallListSMData.h" />
+    <ClInclude Include="..\..\Common\StockBase.h" />
+    <ClInclude Include="..\..\Common\TeamBase.h" />
+    <ClInclude Include="..\..\Common\TeamSMData.h" />
+    <ClInclude Include="..\..\Common\UDP.h" />
+    <ClInclude Include="..\..\Common\UdpLog.h" />
+    <ClInclude Include="..\..\Common\UnitTest.h" />
+    <ClInclude Include="..\..\Common\version.h" />
+    <ClInclude Include="..\..\Common\ZoneSetting.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommLib\CommLib.vcxproj">
+      <Project>{1d8cd896-200f-41d4-bc6a-3ed624cea757}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

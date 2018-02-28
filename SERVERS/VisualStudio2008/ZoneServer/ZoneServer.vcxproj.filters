@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{3748ee27-65e2-4662-93e5-0cee339f0561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{86d112db-ef9e-4d5c-adf5-20c756943ab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{f00c5367-0080-45c7-9c80-bdf323627c59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Timer">
+      <UniqueIdentifier>{0ebf6e7b-35ec-4c23-9e5c-63fc5649c70b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\Base64.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CfgBuilder.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CheckCodeCache.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Common.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CommonPacket.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CommonServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DumpHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GdiUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Script.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\TimerMgr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UDP.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UnitTest.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\PlayerMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\ServerMain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\ZoneServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\data\BuffData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\data\DropData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\data\InvestiGate.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\data\ItemData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\data\NpcData.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\GameObject\Stats.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\GameObject\CGameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\GameObject\CPlayerObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\GameObject\CNpcObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\GameObject\Buff.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ZoneServer\ServerGameplayState.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Common\Base64.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CfgBuilder.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CheckCodeCache.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Common.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonPacket.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonServer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonServerClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DumpHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GdiUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MemGuard.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PacketType.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PlayerStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\RALibDef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Script.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TimerMgr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UDP.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UnitTest.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\ZoneServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\PlayerMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\Timer\timeSignal.h">
+      <Filter>Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\data\BuffData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\data\DropData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\data\InvestiGate.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\data\ItemData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\data\NpcData.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\GameObject\Stats.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\GameObject\CGameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\GameObject\CPlayerObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\GameObject\CNpcObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\GameObject\Buff.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\GameObject\CGameBase.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\ServerGameplayState.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ZoneServer\ServerPacketProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

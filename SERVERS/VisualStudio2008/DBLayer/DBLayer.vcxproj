@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitPress|Win32">
+      <Configuration>UnitPress</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Debug|Win32">
+      <Configuration>UnitTest_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Release|Win32">
+      <Configuration>UnitTest_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest|Win32">
+      <Configuration>UnitTest</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ABABCA07-6116-414A-B61E-D9CA724318DB}</ProjectGuid>
+    <RootNamespace>DBLayer</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EnableManagedIncrementalBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <EnableManagedIncrementalBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</EnableManagedIncrementalBuild>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)D</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;..\..\DBLayer\Data\;..\..\DBLayer\Common\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;TCP_SERVER;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)D.lib</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Libs\Libs\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Oy- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;..\..\DBLayer\Data\;..\..\DBLayer\Common\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;TCP_SERVER;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Lib>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Libs\Libs\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\DBLayer\Data\;..\..\DBLayer\Common\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>ntwdblib.lib;DBLib_08d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.lib</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\..\..\Libs\Libs\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\DBLayer\Data\;..\..\DBLayer\Common\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;TCP_SERVER;WORLDSERVER;_NTJ_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>ntwdblib.lib;DBLib_08utd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.lib</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\..\..\Libs\Libs\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\DBLayer\Data\;..\..\DBLayer\Common\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;TCP_SERVER;WORLDSERVER;_NTJ_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>ntwdblib.lib;DBLib_08ut.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\..\..\Libs\Libs\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\DBLayer\Data\;..\..\DBLayer\Common\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;TCP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>false</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>ntwdblib.lib;DBLib_08d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)D.lib</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\..\..\Libs\Libs\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\DBLayer\Common\crc32.cpp" />
+    <ClCompile Include="..\..\DBLayer\Common\DBUtility.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\DataBase.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\DBError.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLBase.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLAccount.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLActorKeyMap.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLAuction.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLBadWord.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLBadWordPlayer.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLBanList.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLBoard.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLCollectEvent.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLEventList.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLExecution.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLGlobalEvent.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLGmLoginCheck.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLGMRole.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLGoldExchange.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLLeague.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLMailList.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLMPList.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLOrg.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLPlayer.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLPromotion.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLServerMap.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TblSocial.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLStagingRebate.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLUserMachine.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLWorld.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLZoneSetting.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLDiscount.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLGold.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TblGoldHistory.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLGoldTrade.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLGoods.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLPrice.cpp" />
+    <ClCompile Include="..\..\DBLayer\Data\TBLTradeGoods.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\DBLayer\Common\crc32.h" />
+    <ClInclude Include="..\..\DBLayer\Common\DBUtility.h" />
+    <ClInclude Include="..\..\DBLayer\Common\Define.h" />
+    <ClInclude Include="..\..\DBLayer\Common\Lock.h" />
+    <ClInclude Include="..\..\DBLayer\Data\DataBase.h" />
+    <ClInclude Include="..\..\DBLayer\Data\DBError.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLBase.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLAccount.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLActorKeyMap.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLAuction.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLBadWord.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLBadWordPlayer.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLBanList.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLBoard.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLCollectEvent.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLEventList.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLExecution.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLGlobalEvent.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLGmLoginCheck.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLGMRole.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLGoldExchange.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLLeague.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLMailList.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLMPList.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLOrg.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLPlayer.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLPromotion.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLServerMap.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TblSocial.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLStagingRebate.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLUserMachine.h" />
+    <CustomBuildStep Include="..\..\DBLayer\Data\TBLWorld.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='UnitPress|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+    <ClInclude Include="..\..\DBLayer\Data\TBLZoneSetting.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLDiscount.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLGold.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TblGoldHistory.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLGoldTrade.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLGoods.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLPrice.h" />
+    <ClInclude Include="..\..\DBLayer\Data\TBLTradeGoods.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

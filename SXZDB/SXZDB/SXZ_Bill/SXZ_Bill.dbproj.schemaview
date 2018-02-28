@@ -1,0 +1,7 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaViewView>1</SchemaViewView>
+    <SchemaViewShowExternalElements>0</SchemaViewShowExternalElements>
+    <SchemaViewShowBuiltInElements>0</SchemaViewShowBuiltInElements>
+  </PropertyGroup>
+</Project>

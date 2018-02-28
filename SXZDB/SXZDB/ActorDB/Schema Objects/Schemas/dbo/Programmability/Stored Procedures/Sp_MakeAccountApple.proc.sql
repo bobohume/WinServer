@@ -1,0 +1,79 @@
+--CREATE PROCEDURE [dbo].[Sp_MakeAccount]
+--@AccountName   	VARCHAR(100),
+--@AccountId		INT, -- 传入0值需要自动创建帐号ID
+--@Flag			INT
+--AS
+--BEGIN	
+--	SET NOCOUNT ON
+--	SET XACT_ABORT ON
+--	DECLARE @ID INT
+--	DECLARE @Name VARCHAR(100)
+--	DECLARE @IsAdult TINYINT
+--	DECLARE @ERR INT
+
+--	SET @ERR = 0
+--	SET @ID = 0
+--	BEGIN TRANSACTION MakeAccount
+	
+--	IF @AccountId = 0	--需要自动创建帐号
+--	BEGIN
+--		SELECT @ID=AccountId FROM Tbl_Account WHERE AccountName=@AccountName
+--		IF @@ROWCOUNT = 0
+--		BEGIN
+--			SELECT @ID=id FROM Tbl_AccountHelper WHERE [name]=@AccountName
+--			IF @@ROWCOUNT = 0
+--			BEGIN
+--				INSERT INTO Tbl_AccountHelper ([name]) VALUES (@AccountName)
+--				SET @ID = @@Identity
+--			END
+--			INSERT INTO Tbl_Account (AccountName, AccountId, IsAdult)
+--					VALUES (@AccountName, @ID, @Flag)
+--		END
+--	END
+--	ELSE
+--	BEGIN
+--		SELECT @Name=AccountName,@IsAdult=IsAdult FROM Tbl_Account WHERE AccountId=@AccountId
+--		IF @@ROWCOUNT = 0
+--		BEGIN
+--			SELECT @ID=id FROM Tbl_AccountHelper WHERE [name]=@AccountName
+--			IF @@ROWCOUNT = 0
+--			BEGIN
+--				--报错'帐号ID存在而帐号名称不存在'
+--				SET @ERR = -1
+--			END
+--			ELSE
+--			BEGIN
+--				IF @ID <> @AccountId
+--				BEGIN
+--					--报错'帐号ID与帐号名称不匹配'
+--					SET @ERR = -3
+--				END
+--				ELSE
+--				BEGIN
+--					INSERT INTO Tbl_Account (AccountName, AccountId, IsAdult)
+--							VALUES (@AccountName, @ID, @Flag)
+--				END
+--			END
+--		END
+--		ELSE
+--		BEGIN
+--			IF @Name <> @AccountName
+--			BEGIN
+--				--报错'帐号ID与帐号名称不匹配'
+--				SET @ERR = -3
+--			END
+--			ELSE
+--			BEGIN
+--				IF @IsAdult <> @Flag
+--				BEGIN
+--					UPDATE Tbl_Account SET IsAdult=@Flag 
+--						WHERE AccountId=@AccountId
+--				END
+--				SET @ID = @AccountId
+--			END
+--		END
+--	END
+
+--	COMMIT TRANSACTION MakeAccount
+--	SELECT @ERR, @ID
+--END

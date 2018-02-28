@@ -1,0 +1,18 @@
+CREATE TABLE [dbo].[Tbl_Prince](
+	[UID]			VARCHAR(37)																		NOT NULL,
+	[PlayerID]		INT																				NOT NULL,
+	[PrincessUID]	VARCHAR(37)		CONSTRAINT	[DF_Tbl_Prince_PrincessUID]		DEFAULT((''))		NOT NULL,
+	[CardUID]		VARCHAR(37)		CONSTRAINT	[DF_Tbl_Prince_CardUID]			DEFAULT((''))		NOT NULL,
+	[Name]			VARCHAR(50)		CONSTRAINT	[DF_Tbl_Prince_Name]			DEFAULT((''))		NOT NULL,
+	[Quatily]		TINYINT			CONSTRAINT	[DF_Tbl_Prince_Quatily]			DEFAULT((0))		NOT NULL,
+	[Level]			INT				CONSTRAINT	[DF_Tbl_Prince_Level]			DEFAULT((0))		NOT NULL,
+	[Exp]			INT				CONSTRAINT	[DF_Tbl_Prince_Exp]				DEFAULT((0))		NOT NULL,
+	[Agi]			INT				CONSTRAINT	[DF_Tbl_Prince_Agi]				DEFAULT((0))		NOT NULL,
+	[Int]			INT				CONSTRAINT	[DF_Tbl_Prince_Int]				DEFAULT((0))		NOT NULL,
+	[Str]			INT				CONSTRAINT	[DF_Tbl_Prince_Str]				DEFAULT((0))		NOT NULL,
+	[OpenTime]		INT				CONSTRAINT	[DF_Tbl_Prince_OpenTime]		DEFAULT((0))		NOT NULL,
+	[OpenFlag]		TINYINT			CONSTRAINT	[DF_Tbl_Prince_OpenFlag]		DEFAULT((0))		NOT NULL,
+	[Peerages]		TINYINT			CONSTRAINT	[DF_Tbl_Prince_Peerages]		DEFAULT((0))		NOT NULL,
+	[Activity]		TINYINT			CONSTRAINT	[DF_Tbl_Prince_Activity]		DEFAULT((0))		NOT NULL,
+	[ActivityTime]	INT				CONSTRAINT	[DF_Tbl_Prince_ActivityTime]	DEFAULT((0))		NOT NULL,
+);

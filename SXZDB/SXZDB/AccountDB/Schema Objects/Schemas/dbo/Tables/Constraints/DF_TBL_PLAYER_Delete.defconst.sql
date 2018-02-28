@@ -1,0 +1,3 @@
+﻿ALTER TABLE [dbo].[TBL_PLAYER]
+    ADD CONSTRAINT [DF_TBL_PLAYER_Delete] DEFAULT ((0)) FOR [Delete];
+

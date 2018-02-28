@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IgnoreAuthorizer>True</IgnoreAuthorizer>
+    <IgnoreUserSettingsObjects>True</IgnoreUserSettingsObjects>
+    <CreateNewDatabase>False</CreateNewDatabase>
+    <BackupDatabaseBeforeChanges>False</BackupDatabaseBeforeChanges>
+    <BlockOnPossibleDataLoss>True</BlockOnPossibleDataLoss>
+    <NoAlterStatementsToChangeCLRTypes>False</NoAlterStatementsToChangeCLRTypes>
+    <DropObjectsNotInSource>False</DropObjectsNotInSource>
+    <DeployDatabaseInSingleUserMode>False</DeployDatabaseInSingleUserMode>
+    <DeployScriptFileName>Release.sql</DeployScriptFileName>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+  </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="Path1">
+      <Value>D:\SQLData\</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="Path2">
+      <Value>D:\SQLData\</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+</Project>

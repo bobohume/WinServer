@@ -1,0 +1,92 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_client", "test_client\test_client.vcproj", "{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_server", "test_server\test_server.vcproj", "{7662F279-07E6-4CA4-AD33-031FDE98B3FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbOperator", "DbOperator\DbOperator.csproj", "{15C38FF0-E625-4616-9843-128775A659C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbOperator.Test", "DbOperator.Test\DbOperator.Test.csproj", "{55B60745-2220-4102-A300-CD86FB0C3657}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7ABED3A3-FBDA-4DD3-B28D-BB521CEBC2B9}"
+	ProjectSection(SolutionItems) = preProject
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		test_informer.vsmdi = test_informer.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = test_informer.vsmdi
+	EndGlobalSection
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 5
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DbOperator.Test\\DbOperator.Test.csproj
+		SccLocalPath1 = .
+		SccProjectFilePathRelativizedFromConnection1 = DbOperator.Test\\
+		SccProjectUniqueName2 = DbOperator\\DbOperator.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = DbOperator\\
+		SccProjectUniqueName3 = test_client\\test_client.vcproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = test_client\\
+		SccProjectUniqueName4 = test_server\\test_server.vcproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = test_server\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Debug|Win32.Build.0 = Debug|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Release|Any CPU.ActiveCfg = Release|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Release|Win32.ActiveCfg = Release|Win32
+		{4AB22DEE-2A75-4A5B-BB2C-E41E2B1365A4}.Release|Win32.Build.0 = Release|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Debug|Win32.Build.0 = Debug|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Release|Any CPU.ActiveCfg = Release|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Release|Win32.ActiveCfg = Release|Win32
+		{7662F279-07E6-4CA4-AD33-031FDE98B3FA}.Release|Win32.Build.0 = Release|Win32
+		{15C38FF0-E625-4616-9843-128775A659C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Debug|Win32.Build.0 = Debug|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{15C38FF0-E625-4616-9843-128775A659C6}.Release|Win32.ActiveCfg = Release|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{55B60745-2220-4102-A300-CD86FB0C3657}.Release|Win32.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

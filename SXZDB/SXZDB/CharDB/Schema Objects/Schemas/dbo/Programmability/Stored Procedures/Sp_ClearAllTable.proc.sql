@@ -1,0 +1,12 @@
+﻿CREATE PROCEDURE [dbo].[Sp_ClearAllTable]
+
+AS
+BEGIN
+	SET NOCOUNT ON
+	DECLARE @SQL VARCHAR(MAX)
+	SET @SQL = ''
+	SELECT @SQL = @SQL+ 'TRUNCATE TABLE ' + [name] + CHAR(13) 
+			FROM sys.objects 
+			WHERE [type]='u'
+	EXEC(@SQL)
+END

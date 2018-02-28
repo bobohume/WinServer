@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sm">
+      <UniqueIdentifier>{8e686421-6d9c-4f68-93dc-adf4f835c715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="packet">
+      <UniqueIdentifier>{681ee242-f8ae-44d7-a63a-dd80396fb1fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db">
+      <UniqueIdentifier>{5836c8b3-8d9d-4c9f-b1c0-7edd76588def}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{e642ddc4-4e69-4330-8da7-d30805a7cb4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pool">
+      <UniqueIdentifier>{439871e0-2162-43a9-be9b-81a3e73e8ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{52b49e67-31db-40a6-a667-928a882bfc6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transaction">
+      <UniqueIdentifier>{1b50142c-ecb9-4010-8614-4f4812c8fb88}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ShareMemory.cpp">
+      <Filter>sm</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketFactoryManager.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketHandle.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketProcess.cpp">
+      <Filter>packet</Filter>
+    </ClCompile>
+    <ClCompile Include="DBThreadManager.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="DBThreadProcedure.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cpp">
+      <Filter>pool</Filter>
+    </ClCompile>
+    <ClCompile Include="CharSet.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="CommLib.cpp" />
+    <ClCompile Include="ConfigChangeMonitor.cpp" />
+    <ClCompile Include="ServerCloseMonitor.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="TimeRange.cpp" />
+    <ClCompile Include="VirtualConsole.cpp" />
+    <ClCompile Include="format.cpp" />
+    <ClCompile Include="redis.cpp" />
+    <ClCompile Include="ToSql.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ShareMemory.h">
+      <Filter>sm</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareMemoryKey.h">
+      <Filter>sm</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareMemoryPool.h">
+      <Filter>sm</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareMemoryUserPool.h">
+      <Filter>sm</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketBase.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketFactory.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketFactoryManager.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketHandle.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketProcess.h">
+      <Filter>packet</Filter>
+    </ClInclude>
+    <ClInclude Include="DBThreadManager.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="DBThreadProcedure.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadProcedure.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="DataCache.h">
+      <Filter>pool</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleDataPool.h">
+      <Filter>pool</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.h">
+      <Filter>pool</Filter>
+    </ClInclude>
+    <ClInclude Include="CharSet.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="CommLib.h" />
+    <ClInclude Include="ConfigChangeMonitor.h" />
+    <ClInclude Include="ErrorCodeDefine.h" />
+    <ClInclude Include="ServerCloseMonitor.h" />
+    <ClInclude Include="SimpleFlag.h" />
+    <ClInclude Include="SimpleFunc.h" />
+    <ClInclude Include="SimpleLocker.h" />
+    <ClInclude Include="SimpleTimer.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="TimeRange.h" />
+    <ClInclude Include="VirtualConsole.h" />
+    <ClInclude Include="format.h" />
+    <ClInclude Include="redis.h" />
+    <ClInclude Include="ToSql.h" />
+    <ClInclude Include="list.h" />
+  </ItemGroup>
+</Project>

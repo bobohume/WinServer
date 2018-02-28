@@ -1,0 +1,33 @@
+CREATE PROCEDURE [dbo].[Sp_CreateActivity]
+@Type	    INT
+AS
+BEGIN
+	SET NOCOUNT ON
+	SET XACT_ABORT ON
+	DECLARE @ERROR CHAR(4)
+	SET @ERROR = '0000'
+	DECLARE @ID INT
+	SET @ID = -1
+
+	BEGIN TRANSACTION CreateActivity
+
+
+	INSERT INTO Tbl_Activity(Type) 
+		SELECT @Type
+
+	if @@ROWCOUNT = 0
+		set @ERROR = '0001'
+	else
+		SET @ID = @@IDENTITY
+
+	
+	if @ERROR <> '0000'
+		ROLLBACK TRANSACTION CreateActivity
+	else
+		COMMIT TRANSACTION CreateActivity
+
+	SELECT @ID
+END
+
+
+

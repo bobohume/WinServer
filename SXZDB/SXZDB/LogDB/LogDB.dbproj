@@ -1,0 +1,1631 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>"DatabaseProject"</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>3.5</ProjectVersion>
+    <ProjectGuid>{333e34e8-434a-47cb-a88f-9a6b705f71a9}</ProjectGuid>
+    <DSP>Microsoft.Data.Schema.Sql.SqlDsp.Sql90DatabaseSchemaProvider</DSP>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <ShowWizard>False</ShowWizard>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <IncludeSchemaNameInFileName>False</IncludeSchemaNameInFileName>
+    <ModelCollation>2052,CI</ModelCollation>
+    <DefaultFileStructure>BySchema</DefaultFileStructure>
+    <DeployToDatabaseAddToServerExplorer>False</DeployToDatabaseAddToServerExplorer>
+    <DeployToScript>True</DeployToScript>
+    <CatalogPropertiesFile>Properties\Database.sqlsettings</CatalogPropertiesFile>
+    <RootNamespace>LogDB</RootNamespace>
+    <DefaultSchema>dbo</DefaultSchema>
+    <PreviousProjectVersion>3.5</PreviousProjectVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>.\sql\release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>.\sql\debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TargetConnectionString>
+    </TargetConnectionString>
+    <TargetDatabase>
+    </TargetDatabase>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <SuppressWarnings>
+    </SuppressWarnings>
+    <DeploymentConfigFile>Properties\Database.sqldeployment</DeploymentConfigFile>
+    <SqlCommandVariablesFile>Properties\Database.sqlcmdvars</SqlCommandVariablesFile>
+    <DeployToDatabase>False</DeployToDatabase>
+  </PropertyGroup>
+  <!--Import the settings-->
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\TeamData\Microsoft.Data.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties\" />
+    <Folder Include="Schema Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\" />
+    <Folder Include="Schema Objects\Database Level Objects\Assemblies\" />
+    <Folder Include="Schema Objects\Database Level Objects\Database Triggers\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Asymmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Certificates\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Master Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Application Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Roles\Database Roles\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Schemas\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Signatures\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Symmetric Keys\" />
+    <Folder Include="Schema Objects\Database Level Objects\Security\Users\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Contracts\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Event Notifications\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Message Types\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Queues\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Remote Service Binding\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Routes\" />
+    <Folder Include="Schema Objects\Database Level Objects\Service Broker\Services\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Filegroups\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Files\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Full Text Catalogs\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Functions\" />
+    <Folder Include="Schema Objects\Database Level Objects\Storage\Partition Schemes\" />
+    <Folder Include="Schema Objects\Schemas\" />
+    <Folder Include="Schema Objects\Schemas\dbo\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Defaults\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Functions\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Rules\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Data Types\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\User Defined Types CLR\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Programmability\Types\XML Schema Collections\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Synonyms\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Constraints\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Keys\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Tables\Triggers\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Indexes\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Statistics\" />
+    <Folder Include="Schema Objects\Schemas\dbo\Views\Triggers\" />
+    <Folder Include="Scripts" />
+    <Folder Include="Scripts\Pre-Deployment" />
+    <Folder Include="Scripts\Post-Deployment" />
+    <Folder Include="Data Generation Plans" />
+    <Folder Include="Schema Comparisons" />
+  </ItemGroup>
+  <ItemGroup>
+    <PropertiesFile Include="Properties\Database.sqlsettings">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqldeployment">
+    </PropertiesFile>
+    <PropertiesFile Include="Properties\Database.sqlcmdvars">
+    </PropertiesFile>
+    <Build Include="Properties\Database.sqlpermissions">
+      <ModelBuilderType>Permissions</ModelBuilderType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_ClearAllTable_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CopyLogDataBase.proc.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateAccountLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateActivityLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateGMLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateItemDetailLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateItemLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateLeagueLog.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateLeagueLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateMailLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateMissionLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateMoneyLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateMountDetailLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateMountLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateOrgLog.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreatePetDetailLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreatePetLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreatePlayerLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateSkillLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateSpiritDetailLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Programmability\Stored Procedures\Sp_CreateSpiritLog_1.proc.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_optype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogAccount_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_ActivityID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_optype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_Val01_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_Val02_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_Val0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogActivity_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content2.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content3.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content4.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content5.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content6.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content7.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_content8.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_optype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogGm_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_ChangeNum.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_BindFriendID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_CurAdroitLv_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_CurAdroit_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_CurMaxWear_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_CurWear_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EmbedSlot0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EmbedSlot1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EmbedSlot2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EmbedSlot3_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EmbedSlot4_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EmbedSlot5_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EmbedSlot6_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EmbedSlot7_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel10.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel11.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel12.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel13.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel14.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel3.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel4.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel5.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel6.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel7.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel8.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenLevel9.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthens_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenValue0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenValue1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_EquipStrengthenValue2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue10_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue11_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue3_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue4_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue5_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue6_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue7_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue8_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IDEProValue9_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IsEquip_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IsRandStrengthens_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_IsTradeActive_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_ItemID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_ItemUID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_LapseTime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_Producer_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_Quality_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_Quantity_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_RemainUseTimes_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_SkillAForEquip_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_SkillBForEquip_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_WuXingID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Detail_WuXingPro_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_IDEProValue0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_IDEProValue1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_IDEProValue2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_ItemNo1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_ItemUID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_optype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_SrcPos1_1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_SrcPos1_2.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_TagPos1_1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_TagPos1_2.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Val0.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_Val1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogItem_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_leagueid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_leagueid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_logtime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_masterorg.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_masterorg_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_optype.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_optype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_orgid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_orgid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_posx.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_posy.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_posz.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_sourceid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_submasterorg.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_submasterorg_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_targetid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_targettype.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_zoneid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogLeague_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_isSystem_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_itemId_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_item_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_item_count_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_money_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_msg_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_optype_1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_readed_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_recver_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_sender_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_sender_name_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_send_time_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_title_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMail_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_optype_1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMission_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_optype1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_Val0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_Val1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_Val2.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_Val3.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMoney_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_Duration_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_LeftTime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_Level_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_LockedLeftTime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_MountDataID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_SkillID0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_SkillID1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_SkillID2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Detail_Status_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_Duration_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_LeftTime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_MountDataID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_MountNo1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_MountNo_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_optype_1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_SkillID0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_SkillID1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogMount_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_logtime.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_masterid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_memberid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_memberLeagueMoney.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_membermoney.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_opitemamount.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_opitemid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_opmoney.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_opresult.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_optype.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_orgid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_orgmoney.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_posx.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_posy.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_posz.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_sourceid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_targetid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_targettype.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogOrg_zoneid.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_AgilityGift_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_AgilityPts_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_BabyPetDataID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_BreedStartTime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Characters0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Characters1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Characters2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Characters3_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Characters4_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_CharPoints_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_ChengZhangLv_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat10_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat11_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat3_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat4_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat5_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat6_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat7_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat8_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combat9_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo10_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo11_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo3_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo4_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo5_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo6_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo7_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo8_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Combo9_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_CurHP_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_CurMP_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_CurPP_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_EquipItem0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_EquipItem1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_EquipItem2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_EquipItem3_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Exp_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Generation_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Happiness_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Insight_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_IntellectGift_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_IntellectPts_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_IsIdentify_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_LastBreedLv_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_LeftTime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Level_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Livers_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_LockedLeftTime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_ManaGift_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_ManaPts_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Mature_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Message_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_PartnerID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_PetDataID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_PetEggID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_PetName_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_PetTalent_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_PetUID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_PneumaGift_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_PneumaPts_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_QianLi_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Quality_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_RandBuffID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Sex_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_StaminaGift_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_StaminaPts_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_StatsPoints_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Status_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_StrengthGift_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_StrengthPts_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Style_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_TitleEnabled_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_Detail_Title_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_optype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_PetNo1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_PetNo_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_val01_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_val02_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_val03_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_val04_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_val0_1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPet_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_DataType_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_optype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_Val01_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_Val02_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_Val03_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_Val04_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_Val0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogPlayer_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_optype_1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_Ripe_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSkill_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_CleanPtsCount_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_CostBuffID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_CurrExp_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_DataID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_EquipID0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_EquipID1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_EquipID2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_JingJieLevel_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_Level_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_LockedLeftTime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_OpenedSkillFlag_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_SkillID0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_SkillID1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_SkillID2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_SkillID3_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_SkillID4_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_SkillID5_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentExtPts_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentLeftPts_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts10_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts11_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts12_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts13_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts14_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts15_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts16_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts17_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts18_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts19_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts20_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts21_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts22_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts23_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts24_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts25_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts26_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts27_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts28_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts29_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts2_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts30_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts31_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts32_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts33_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts34_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts35_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts3_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts4_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts5_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts6_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts7_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts8_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_TalentSkillPts9_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_Detail_ValueBuffID_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_logtime_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_optype_1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_posx_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_posy_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_posz_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_sourceid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_SpiritNo1_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_SpiritNo_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_targetid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_targettype_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_val01_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_val02_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_val03_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_val04_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_val0_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Constraints\DF_Tbl_LogSpirit_zoneid_1.defconst.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LOGAccount_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogActivity_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LOGGM_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogItem_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogItem_Detail_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogLeague.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogLeague_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogMail_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogMission_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogMoney_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogMount_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogMount_Detail_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogOrg.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogPet_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogPet_Detail_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogPlayer_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogSkill_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogSpirit_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogSpirit_Detail_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Keys\PK_Tbl_LogType_1.pkey.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogAccount_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogActivity_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogGm_1.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogItem_1.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogItem_Detail_1.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogLeague_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogMail_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogMission_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogMoney_1.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogMount_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogMount_Detail_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogOrg.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogPet_1.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogPet_Detail_1.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogPlayer_1.table.sql">
+      <SubType>Code</SubType>
+      <AnsiNulls>On</AnsiNulls>
+      <QuotedIdentifier>On</QuotedIdentifier>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogSkill_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogSpirit_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogSpirit_Detail_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <Build Include="Schema Objects\Schemas\dbo\Tables\Tbl_LogType_1.table.sql">
+      <SubType>Code</SubType>
+    </Build>
+    <PreDeploy Include="Scripts\Pre-Deployment\Script.PreDeployment.sql">
+      <SubType>Code</SubType>
+    </PreDeploy>
+    <PostDeploy Include="Scripts\Post-Deployment\Script.PostDeployment.sql">
+      <SubType>Code</SubType>
+    </PostDeploy>
+  </ItemGroup>
+</Project>

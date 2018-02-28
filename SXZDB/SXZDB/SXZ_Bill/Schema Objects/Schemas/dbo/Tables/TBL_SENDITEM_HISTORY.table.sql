@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[TBL_SENDITEM_HISTORY] (
+    [DATE]        DATETIME       NOT NULL,
+    [ACCOUNTID]   INT            NOT NULL,
+    [ZONDID]      VARCHAR (10)   NOT NULL,
+    [ROLEID]      BIGINT         NOT NULL,
+    [ROLENAME]    NVARCHAR (100) NOT NULL,
+    [ITEMUNIQUE]  VARCHAR (2)    NOT NULL,
+    [ITEMNUM]     INT            NOT NULL,
+    [RECEIPTTYPE] TINYINT        NOT NULL,
+    [MEMO]        NVARCHAR (100) NOT NULL
+);
+

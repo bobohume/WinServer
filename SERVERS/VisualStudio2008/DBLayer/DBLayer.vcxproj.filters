@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{7ba30046-2c5b-4a1a-a59e-94c2c61d95c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{0a035e15-8e41-47fb-a623-04731830a8cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\ActorDB">
+      <UniqueIdentifier>{3ae043fd-b2f0-4ac7-9dfb-815b8dd7b74d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\BillingDB">
+      <UniqueIdentifier>{52161c9a-a288-49f0-90c2-64439afe10dc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\DBLayer\Common\crc32.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Common\DBUtility.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\DataBase.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLBase.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLAccount.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLActorKeyMap.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLAuction.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLBadWord.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLBadWordPlayer.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLBanList.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLBoard.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLCollectEvent.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLEventList.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLGlobalEvent.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLGmLoginCheck.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLGMRole.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLGoldExchange.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLLeague.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLMailList.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLMPList.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLOrg.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLPlayer.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLPromotion.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLServerMap.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TblSocial.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLStagingRebate.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLUserMachine.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLWorld.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLZoneSetting.cpp">
+      <Filter>Data\ActorDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLDiscount.cpp">
+      <Filter>Data\BillingDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLGold.cpp">
+      <Filter>Data\BillingDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TblGoldHistory.cpp">
+      <Filter>Data\BillingDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLGoldTrade.cpp">
+      <Filter>Data\BillingDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLGoods.cpp">
+      <Filter>Data\BillingDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLPrice.cpp">
+      <Filter>Data\BillingDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLTradeGoods.cpp">
+      <Filter>Data\BillingDB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\DBError.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\DBLayer\Data\TBLExecution.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\DBLayer\Common\crc32.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Common\DBUtility.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Common\Define.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Common\Lock.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\DataBase.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLBase.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLAccount.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLActorKeyMap.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLAuction.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLBadWord.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLBadWordPlayer.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLBanList.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLBoard.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLCollectEvent.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLEventList.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLGlobalEvent.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLGmLoginCheck.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLGMRole.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLGoldExchange.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLLeague.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLMailList.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLMPList.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLOrg.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLPlayer.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLPromotion.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLServerMap.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TblSocial.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLStagingRebate.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLUserMachine.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLZoneSetting.h">
+      <Filter>Data\ActorDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLDiscount.h">
+      <Filter>Data\BillingDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLGold.h">
+      <Filter>Data\BillingDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TblGoldHistory.h">
+      <Filter>Data\BillingDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLGoldTrade.h">
+      <Filter>Data\BillingDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLGoods.h">
+      <Filter>Data\BillingDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLPrice.h">
+      <Filter>Data\BillingDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLTradeGoods.h">
+      <Filter>Data\BillingDB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\DBError.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\DBLayer\Data\TBLExecution.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="..\..\DBLayer\Data\TBLWorld.h">
+      <Filter>Data\ActorDB</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

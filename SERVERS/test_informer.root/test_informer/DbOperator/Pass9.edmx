@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PASS9Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="PASS9ModelStoreContainer">
+          <EntitySet Name="Tbl_Account" EntityType="PASS9Model.Store.Tbl_Account" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Tbl_Record" EntityType="PASS9Model.Store.Tbl_Record" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Tbl_Account">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ZoneId" Type="int" Nullable="false" />
+          <Property Name="ActiveCode" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Tbl_Record">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PASS9Model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="PASS9">
+          <EntitySet Name="Tbl_Account" EntityType="PASS9Model.Tbl_Account" />
+          <EntitySet Name="Tbl_Record" EntityType="PASS9Model.Tbl_Record" />
+        </EntityContainer>
+        <EntityType Name="Tbl_Account">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="ZoneId" Type="Int32" Nullable="false" />
+          <Property Name="ActiveCode" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="Tbl_Record">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="PASS9ModelStoreContainer" CdmEntityContainer="PASS9">
+          <EntitySetMapping Name="Tbl_Account">
+            <EntityTypeMapping TypeName="IsTypeOf(PASS9Model.Tbl_Account)">
+              <MappingFragment StoreEntitySet="Tbl_Account">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="ZoneId" ColumnName="ZoneId" />
+                <ScalarProperty Name="ActiveCode" ColumnName="ActiveCode" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tbl_Record">
+            <EntityTypeMapping TypeName="IsTypeOf(PASS9Model.Tbl_Record)">
+              <MappingFragment StoreEntitySet="Tbl_Record">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="Pass9">
+        <EntityTypeShape EntityType="PASS9Model.Tbl_Account" Width="1.5" PointX="0.75" PointY="0.75" Height="1.5923063151041665" IsExpanded="true" />
+        <EntityTypeShape EntityType="PASS9Model.Tbl_Record" Width="1.5" PointX="2.75" PointY="0.75" Height="1.099264322916667" IsExpanded="true" /></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Debug|Win32">
+      <Configuration>UnitTest_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="UnitTest_Release|Win32">
+      <Configuration>UnitTest_Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BF7721F1-650A-4304-8059-C311315B9647}</ProjectGuid>
+    <RootNamespace>ChatServer</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'" />
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)_08d</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(ProjectName)_08</TargetName>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</EmbedManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;..\..\..\Libs\include\tolua;..\..\DBLayer\;..\..\DBLayer\Common;..\..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;CHATSERVER;TCP_SERVER;_HAS_ITERATOR_DEBUGGING=0;_SECURE_SCL=0;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08d.lib;WinTCP_08d.lib;Base_08d.lib;luaWarp_08d.lib;toluappd.lib;dbghelp.lib;DBLayerD.lib;Json_08d.lib;libcurl.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08d.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08d.pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\ChatServer\$(TargetFileName)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>/Oy- %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\Libs\include\;..\..\;..\..\..\Libs\include\tolua;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;CHATSERVER;TCP_SERVER;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4748;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ntwdblib.lib;Ws2_32.lib;mswsock.lib;DBLib_08.lib;WinTCP_08.lib;Base_08.lib;luaWarp_08.lib;toluapp.lib;dbghelp.lib;DBLayer.lib;Json_08.lib;libcurl_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_08.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Libs\LIBS;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <ProgramDatabaseFile>$(OutDir)$(ProjectName)_08.pdb</ProgramDatabaseFile>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetDir)$(TargetFileName)" "..\..\..\Construction\ChatServer\$(TargetFileName)"
+</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\..\..\..\Libs\include\tolua;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;CHATSERVER;TCP_SERVER;_NTJ_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='UnitTest_Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\..\..\Libs\include\;..\..\;..\..\..\..\..\Libs\include\tolua;..\DBLayer\;..\DBLayer\Common;..\DBLayer\Data;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;CHATSERVER;TCP_SERVER;_NTJ_UNITTEST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ChatServer\ChatLog.h" />
+    <ClInclude Include="..\..\Common\dbStruct.h" />
+    <ClInclude Include="..\..\Common\Http\curl\curl.h" />
+    <ClInclude Include="..\..\Common\Http\curl\curlbuild.h" />
+    <ClInclude Include="..\..\Common\Http\curl\curlrules.h" />
+    <ClInclude Include="..\..\Common\Http\curl\curlver.h" />
+    <ClInclude Include="..\..\Common\Http\curl\easy.h" />
+    <ClInclude Include="..\..\Common\Http\curl\mprintf.h" />
+    <ClInclude Include="..\..\Common\Http\curl\multi.h" />
+    <ClInclude Include="..\..\Common\Http\curl\stdcheaders.h" />
+    <ClInclude Include="..\..\Common\Http\curl\typecheck-gcc.h" />
+    <ClInclude Include="..\..\Common\Http\curl\types.h" />
+    <ClInclude Include="..\..\Common\Http\Http.h" />
+    <ClInclude Include="..\..\Common\Http\Param.h" />
+    <ClInclude Include="..\..\Common\Http\Request.h" />
+    <ClInclude Include="..\..\Common\Json\autolink.h" />
+    <ClInclude Include="..\..\Common\Json\config.h" />
+    <ClInclude Include="..\..\Common\Json\features.h" />
+    <ClInclude Include="..\..\Common\Json\forwards.h" />
+    <ClInclude Include="..\..\Common\Json\json.h" />
+    <ClInclude Include="..\..\Common\Json\JsonParser.h" />
+    <ClInclude Include="..\..\Common\Json\json_batchallocator.h" />
+    <ClInclude Include="..\..\Common\Json\reader.h" />
+    <ClInclude Include="..\..\Common\Json\value.h" />
+    <ClInclude Include="..\..\Common\Json\writer.h" />
+    <ClInclude Include="..\..\WorldServer\Channel.h" />
+    <ClInclude Include="..\..\ChatServer\ChatServer.h" />
+    <ClInclude Include="..\..\ChatServer\PlayerMgr.h" />
+    <ClInclude Include="..\..\ChatServer\ServerMgr.h" />
+    <ClInclude Include="..\..\ChatServer\WorldPacketProcess.h" />
+    <ClInclude Include="..\..\Common\BanInfoData.h" />
+    <ClInclude Include="..\..\Common\Base64.h" />
+    <ClInclude Include="..\..\Common\BoardBase.h" />
+    <ClInclude Include="..\..\Common\CfgBuilder.h" />
+    <ClInclude Include="..\..\Common\ChatBase.h" />
+    <ClInclude Include="..\..\Common\CommonClient.h" />
+    <ClInclude Include="..\..\Common\CommonPacket.h" />
+    <ClInclude Include="..\..\Common\CommonServer.h" />
+    <ClInclude Include="..\..\Common\CommonServerClient.h" />
+    <ClInclude Include="..\..\Common\CppTypeInfo.h" />
+    <ClInclude Include="..\..\Common\DataFile.h" />
+    <ClInclude Include="..\..\Common\FilterOpt.h" />
+    <ClInclude Include="..\..\Common\GameData.h" />
+    <ClInclude Include="..\..\Common\GdiUtil.h" />
+    <ClInclude Include="..\..\Common\GlobalEvent.h" />
+    <ClInclude Include="..\..\Common\KeyMapBase.h" />
+    <ClInclude Include="..\..\Common\LockRef.h" />
+    <ClInclude Include="..\..\Common\LogHelper.h" />
+    <ClInclude Include="..\..\Common\MarriageBase.h" />
+    <ClInclude Include="..\..\Common\MemGuard.h" />
+    <ClInclude Include="..\..\Common\OmpUtils.h" />
+    <ClInclude Include="..\..\Common\OrgBase.h" />
+    <ClInclude Include="..\..\Common\PacketPool.h" />
+    <ClInclude Include="..\..\Common\PacketType.h" />
+    <ClInclude Include="..\..\Common\PlayerStruct.h" />
+    <ClInclude Include="..\..\Common\RefHandle.h" />
+    <ClInclude Include="..\..\Common\SafeArray.h" />
+    <ClInclude Include="..\..\Common\SafeBase.h" />
+    <ClInclude Include="..\..\Common\SafeHandle.h" />
+    <ClInclude Include="..\..\Common\SafeMemPool.h" />
+    <ClInclude Include="..\..\Common\ScriptVariable.h" />
+    <ClInclude Include="..\..\Common\ServerFramwork.h" />
+    <ClInclude Include="..\..\Common\slist.h" />
+    <ClInclude Include="..\..\Common\SocialBase.h" />
+    <ClInclude Include="..\..\Common\StockBase.h" />
+    <ClInclude Include="..\..\Common\TeamBase.h" />
+    <ClInclude Include="..\..\Common\TimerStateMachine.h" />
+    <ClInclude Include="..\..\Common\Tracable.h" />
+    <ClInclude Include="..\..\Common\UDP.h" />
+    <ClInclude Include="..\..\Common\UdpLog.h" />
+    <ClInclude Include="..\..\Common\UnitTest.h" />
+    <ClInclude Include="..\..\Common\version.h" />
+    <ClInclude Include="..\..\Common\WaitObject.h" />
+    <ClInclude Include="..\..\WorldServer\ChatMgr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ChatServer\ChatLog.cpp" />
+    <ClCompile Include="..\..\Common\BanInfoData.cpp" />
+    <ClCompile Include="..\..\Common\Base64.cpp" />
+    <ClCompile Include="..\..\Common\CfgBuilder.cpp" />
+    <ClCompile Include="..\..\Common\CommonPacket.cpp" />
+    <ClCompile Include="..\..\Common\CommonServer.cpp" />
+    <ClCompile Include="..\..\Common\CppTypeInfo.cpp" />
+    <ClCompile Include="..\..\Common\DataFile.cpp" />
+    <ClCompile Include="..\..\Common\dbStruct.cpp" />
+    <ClCompile Include="..\..\Common\DumpHelper.cpp" />
+    <ClCompile Include="..\..\Common\FilterOpt.cpp" />
+    <ClCompile Include="..\..\Common\GameData.cpp" />
+    <ClCompile Include="..\..\Common\GdiUtil.cpp" />
+    <ClCompile Include="..\..\Common\Http\Http.cpp" />
+    <ClCompile Include="..\..\Common\Http\Param.cpp" />
+    <ClCompile Include="..\..\Common\Http\Request.cpp" />
+    <ClCompile Include="..\..\WorldServer\ChatMgr.cpp" />
+    <ClCompile Include="..\..\WorldServer\LockCommon.cpp" />
+    <ClCompile Include="..\..\Common\LogHelper.cpp" />
+    <ClCompile Include="..\..\Common\OmpUtils.cpp" />
+    <ClCompile Include="..\..\Common\PacketPool.cpp" />
+    <ClCompile Include="..\..\Common\PlayerStruct.cpp" />
+    <ClCompile Include="..\..\Common\ScriptVariable.cpp" />
+    <ClCompile Include="..\..\Common\UDP.cpp" />
+    <ClCompile Include="..\..\Common\UnitTest.cpp" />
+    <ClCompile Include="..\..\Common\WaitObject.cpp" />
+    <ClCompile Include="..\..\WorldServer\Channel.cpp" />
+    <ClCompile Include="..\..\ChatServer\ChatServer.cpp" />
+    <ClCompile Include="..\..\ChatServer\PlayerMgr.cpp" />
+    <ClCompile Include="..\..\ChatServer\ServerMgr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CommLib\CommLib.vcxproj">
+      <Project>{1d8cd896-200f-41d4-bc6a-3ed624cea757}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

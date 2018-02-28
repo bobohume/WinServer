@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{be492fe9-4bce-4c06-b42b-3743f684fb20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Http">
+      <UniqueIdentifier>{4ed0df61-4c71-487b-9d8d-bc3f2f7068b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Http\curl">
+      <UniqueIdentifier>{acac8d49-06bf-44e0-bf4e-69d4440e1bba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{f5d1d175-446a-4676-849e-ac3847145c29}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\WorldServer\Channel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ChatServer\ChatServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ChatServer\PlayerMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ChatServer\ServerMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ChatServer\WorldPacketProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\BanInfoData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Base64.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\BoardBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CfgBuilder.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ChatBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonPacket.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonServer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CommonServerClient.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\CppTypeInfo.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\DataFile.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\FilterOpt.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GameData.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GdiUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\GlobalEvent.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\KeyMapBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LockRef.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\LogHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MarriageBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\MemGuard.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\OmpUtils.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\OrgBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PacketPool.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PacketType.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\PlayerStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\RefHandle.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SafeArray.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SafeBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SafeHandle.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SafeMemPool.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ScriptVariable.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\ServerFramwork.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\slist.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\SocialBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\StockBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TeamBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\TimerStateMachine.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Tracable.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UDP.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UdpLog.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\UnitTest.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\version.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\WaitObject.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\dbStruct.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\WorldServer\ChatMgr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\Http.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\Param.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\Request.h">
+      <Filter>Http</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\curl.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\curlbuild.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\curlrules.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\curlver.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\easy.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\mprintf.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\multi.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\stdcheaders.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\typecheck-gcc.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Http\curl\types.h">
+      <Filter>Http\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\json_batchallocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\JsonParser.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Common\Json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ChatServer\ChatLog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Common\BanInfoData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Base64.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CfgBuilder.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CommonPacket.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CommonServer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\CppTypeInfo.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DataFile.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\DumpHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\FilterOpt.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GameData.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\GdiUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\LockCommon.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\LogHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\OmpUtils.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PacketPool.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\PlayerStruct.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\ScriptVariable.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UDP.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\UnitTest.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\WaitObject.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\Channel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ChatServer\ChatServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ChatServer\PlayerMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ChatServer\ServerMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\dbStruct.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\WorldServer\ChatMgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Http\Http.cpp">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Http\Param.cpp">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Common\Http\Request.cpp">
+      <Filter>Http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ChatServer\ChatLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
